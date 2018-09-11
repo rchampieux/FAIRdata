@@ -1,0 +1,2698 @@
+b'@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fair: <> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+"All Rights Reserved" a dc:license .
+
+"CC-BY-4.0" a dc:license .
+
+"Copyright" a "FAIR.licenseType" .
+
+"Permissive" a "FAIR.licenseType" .
+
+"A.1" a "FAIR.criterionCode" .
+
+"A.2" a "FAIR.criterionCode" .
+
+"A1.1" a "FAIR.criterionCode" .
+
+"A1.2" a "FAIR.criterionCode" .
+
+"A1a" a "FAIR.criterionCode" .
+
+"A1b" a "FAIR.criterionCode" .
+
+"A2b" a "FAIR.criterionCode" .
+
+"A4a" a "FAIR.criterionCode" .
+
+"A5a" a "FAIR.criterionCode" .
+
+"B.1" a "FAIR.criterionCode" .
+
+"B.2" a "FAIR.criterionCode" .
+
+"C.1" a "FAIR.criterionCode" .
+
+"C.2" a "FAIR.criterionCode" .
+
+"C1" a "FAIR.criterionCode" .
+
+"Color Coded" a "FAIR.scoringOutput" .
+
+"Computable Action (e.g. HTTP get)" a "FAIR.criterionMeasurementMethod" .
+
+"D.1" a "FAIR.criterionCode" .
+
+"E.1" a "FAIR.criterionCode" .
+
+"Erik Schultes (Editor), DTL; Luiz Bonino, DTL; Michel Dumontier, Maastricht University; S.C. Edmunds, Executive Editor Giga Science; Sarah Gerster, Swiss National Science Foundation; Peter-Bram \xe2\x80\x98t Hoen, LUMC; Albert Mons, DTL; Mark Wilkinson, UPM" a "FAIR.Authors" .
+
+"F1a" a "FAIR.criterionCode" .
+
+"F1b" a "FAIR.criterionCode" .
+
+"F3" a "FAIR.criterionCode" .
+
+"F4" a "FAIR.criterionCode" .
+
+"F5a" a "FAIR.criterionCode" .
+
+"FM-A1.1" a "FAIR.criterionCode" .
+
+"FM-A1.2" a "FAIR.criterionCode" .
+
+"FM-A2" a "FAIR.criterionCode" .
+
+"FM-F1B" a "FAIR.criterionCode" .
+
+"FM-F2" a "FAIR.criterionCode" .
+
+"FM-F3" a "FAIR.criterionCode" .
+
+"FM-F4" a "FAIR.criterionCode" .
+
+"FM-I1" a "FAIR.criterionCode" .
+
+"FM-I2" a "FAIR.criterionCode" .
+
+"FM-I3" a "FAIR.criterionCode" .
+
+"FM-R1.1" a "FAIR.criterionCode" .
+
+"FM-R1.2" a "FAIR.criterionCode" .
+
+"FM-R1.3" a "FAIR.criterionCode" .
+
+"I2a" a "FAIR.criterionCode" .
+
+"I3a" a "FAIR.criterionCode" .
+
+"I4b" a "FAIR.criterionCode" .
+
+"I5a" a "FAIR.criterionCode" .
+
+"Ma\'ayan Laboratory of Computational Systems Biology" a "FAIR.Authors" .
+
+"Mark Wilkinson, Susanna Sansone, Michel Dumontier, Peter Doorn, Luiz Olavo Bonino, Erik Schultes" a "FAIR.Authors" .
+
+"Melissa Haendel, Andrew Su, Julie McMurry" a "FAIR.Contact" .
+
+"Melissa Haendel, Andrew Su, Julie McMurry, Christopher G Chute, Chris Mungall, Benjamin Good, Chunlei Wu, Shannon McWeeney, Harry Hochheiser, Peter Robinson, Maureen Hoatlin, Matthew Brush, Damian Smedley, Monica Munoz-Torres, Guoqian Jiang, Hongfang Liu, Peter McQuilton, Tom Conlin" a "FAIR.Authors" .
+
+"Peter Doorn, Elly Dijk and Marjan Grootveld, Data Archiving and Networked Services/DANS" a "FAIR.Authors" .
+
+"R1.1" a "FAIR.criterionCode" .
+
+"R1.2" a "FAIR.criterionCode" .
+
+"R1.3" a "FAIR.criterionCode" .
+
+"R10" a "FAIR.criterionCode" .
+
+"R11" a "FAIR.criterionCode" .
+
+"R12" a "FAIR.criterionCode" .
+
+"R13" a "FAIR.criterionCode" .
+
+"R14" a "FAIR.criterionCode" .
+
+"R15" a "FAIR.criterionCode" .
+
+"R16" a "FAIR.criterionCode" .
+
+"R5" a "FAIR.criterionCode" .
+
+"R6" a "FAIR.criterionCode" .
+
+"R7" a "FAIR.criterionCode" .
+
+"R8" a "FAIR.criterionCode" .
+
+"R9" a "FAIR.criterionCode" .
+
+"Seth Carbon" a "FAIR.Contact" .
+
+"Seth Carbon, Robin Champieux, Julie McMurry, Lilly Winfree, Letisha Wyatt, Melissa Haendel" a "FAIR.Authors" .
+
+"V1.0.4" a "FAIR.version" .
+
+"http://54.175.203.110/fairshake" a "FAIR.website" .
+
+"http://reusabledata.org/" a "FAIR.website" .
+
+"https://docs.google.com/document/d/1bRQDN_VFSPSMnsADLyzky-sbd6ZPArsHOcYhERdyrL8/edit" a "FAIR.website" .
+
+"https://purl.org/fair-metrics/FM_A1.1" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_A1.2" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_A2" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_F2" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_F4" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_I1" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_I2" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_I3" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_R1.1" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_R1.2" a "FAIR.criterionOtherID" .
+
+"https://purl.org/fair-metrics/FM_R1.3" a "FAIR.criterionOtherID" .
+
+"https://www.coretrustseal.org/wp-content/uploads/2017/01/Core_Trustworthy_Data_Repositories_Requirements_01_00.pdf" a "FAIR.website" .
+
+"https://www.dtls.nl/fair-data/fair-principles-explained/" a "FAIR.website" .
+
+"https://zenodo.org/record/1305060#.Wz_JAJMbOqA" a "FAIR.website" .
+
+"https://zenodo.org/record/203295#.WzaT7SAnbIV" a "FAIR.website" .
+
+"v01.00" a "FAIR.version" .
+
+"I1a" a "FAIR.criterionCode" .
+
+"https://purl.org/fair-metrics/FM_F1B" a "FAIR.criterionOtherID" .
+
+"unknown" a "FAIR.version" .
+
+"(meta) data are assigned globally unique and persistent identifiers" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F1" ;
+    <hasID> "(meta) data are assigned globally unique and persistent identifiers" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta) data are assigned globally unique and persistent identifiers" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F1Requirement" .
+
+"(meta)data are associated with detailed provenance" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1.2" ;
+    <hasID> "(meta)data are associated with detailed provenance" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data are associated with detailed provenance" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"(meta)data are registered or indexed in a searchable resource" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F4" ;
+    <hasID> "(meta)data are registered or indexed in a searchable resource" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data are registered or indexed in a searchable resource" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F4Requirement" .
+
+"(meta)data are released with a clear and accessible data usage license" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1.1" ;
+    <hasID> "(meta)data are released with a clear and accessible data usage license" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data are released with a clear and accessible data usage license" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"(meta)data are retrievable by their identifier using a standardised communication protocol" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1" ;
+    <hasID> "(meta)data are retrievable by their identifier using a standardised communication protocol" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data are retrievable by their identifier using a standardised communication protocol" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"(meta)data include qualified references to other (meta)data" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I3" ;
+    <hasID> "(meta)data include qualified references to other (meta)data" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data include qualified references to other (meta)data" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I3Requirement" .
+
+"(meta)data meet domain-relevant community standards" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1.3" ;
+    <hasID> "(meta)data meet domain-relevant community standards" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data meet domain-relevant community standards" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_3Requirement" .
+
+"(meta)data use a formal, accessible, shared and broadly applicable language for knowledge representation" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "(meta)data use a formal, accessible, shared and broadly applicable language for knowledge representation" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data use a formal, accessible, shared and broadly applicable language for knowledge representation" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"(meta)data use vocabularies that follow the FAIR principles" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I2" ;
+    <hasID> "(meta)data use vocabularies that follow the FAIR principles" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "(meta)data use vocabularies that follow the FAIR principles" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I2Requirement" .
+
+"2" a "FAIR.criterionCode" .
+
+"3" a "FAIR.criterionCode" .
+
+"4" a "FAIR.criterionCode" .
+
+"5" a "FAIR.criterionCode" .
+
+"6" a "FAIR.criterionCode" .
+
+"7" a "FAIR.criterionCode" .
+
+"8" a "FAIR.criterionCode" .
+
+"9" a "FAIR.criterionCode" .
+
+"A description of the methods used to acquire the data is provided." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "8" ;
+    <hasID> "A description of the methods used to acquire the data is provided." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "A description of the methods used to acquire the data is provided." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"A paper about the tool has been published." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "3" ;
+    <hasID> "A paper about the tool has been published." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "A paper about the tool has been published." ;
+    dc:isPartOf "FAIRshake" ;
+    <isMapped> "1" .
+
+"A standardized ID or accession number is used to identify the dataset." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "1" ;
+    <hasID> "A standardized ID or accession number is used to identify the dataset." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "A standardized ID or accession number is used to identify the dataset." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "" .
+
+"API" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1" ;
+    <hasID> "API" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "API" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1_1Requirement" .
+
+"Access" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2" ;
+    <hasID> "Access" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Access" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1_2Requirement" .
+
+"Access Authorization" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-A1.2" ;
+    <hasID> "Access Authorization" ;
+    <hasMeasurementMethod> "Combination" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_A1.2" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Access Authorization" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1_2Requirement" .
+
+"Access Protocol" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-A1.1" ;
+    <hasID> "Access Protocol" ;
+    <hasMeasurementMethod> "Combination" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_A1.1" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Access Protocol" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1_1Requirement" .
+
+"Accessible Usage License" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-R1.1" ;
+    <hasID> "Accessible Usage License" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_R1.1" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Accessible Usage License" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Advisers" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R3" ;
+    <hasID> "Advisers" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Advisers" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Archiving takes place according to defined workflows from ingest to dissemination." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R12" ;
+    <hasID> "Archiving takes place according to defined workflows from ingest to dissemination." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Archiving takes place according to defined workflows from ingest to dissemination." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isMapped> "1" .
+
+"Are all of the data files in a proprietary format?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1a" ;
+    <hasID> "Are all of the data files in a proprietary format?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Are all of the data files in a proprietary format?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"Are different types of downstream reuse distinguished as allowable or as forbidden?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "D.1" ;
+    <hasID> "Are different types of downstream reuse distinguished as allowable or as forbidden?" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Are different types of downstream reuse distinguished as allowable or as forbidden?" ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Are different types of person groups or \xe2\x80\x9cagents\xe2\x80\x9d distinguished?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "E.1" ;
+    <hasID> "Are different types of person groups or \xe2\x80\x9cagents\xe2\x80\x9d distinguished?" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Are different types of person groups or \xe2\x80\x9cagents\xe2\x80\x9d distinguished?" ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Are the metadata accessible" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1b" ;
+    <hasID> "Are the metadata accessible" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Are the metadata accessible" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A2Requirement" .
+
+"Attribute organizations" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "T2" ;
+    <hasID> "Attribute organizations" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Attribute organizations" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Audience" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A3" ;
+    <hasID> "Audience" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Audience" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isMapped> "1" .
+
+"Authorization for redistribution" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "L2" ;
+    <hasID> "Authorization for redistribution" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Authorization for redistribution" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Avoid embedding meaning" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Avoid embedding meaning" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Avoid embedding meaning" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I2Requirement" .
+
+"Biomedical" a "FAIR.communityFocus" .
+
+"Browsable" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A3" ;
+    <hasID> "Browsable" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Browsable" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"Clear" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "L1" ;
+    <hasID> "Clear" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Clear" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Comprehensiveness" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R4" ;
+    <hasID> "Comprehensiveness" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Comprehensiveness" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Connectedness" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "C1" ;
+    <hasID> "Connectedness" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Connectedness" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple",
+        "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I3Requirement",
+        "FAIR.R1Requirement" .
+
+"Contact information is provided for the creator(s) of the dataset." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "7" ;
+    <hasID> "Contact information is provided for the creator(s) of the dataset." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Contact information is provided for the creator(s) of the dataset." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Contact information is provided for the creator(s) of the tool." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "7" ;
+    <hasID> "Contact information is provided for the creator(s) of the tool." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "Contact information is provided for the creator(s) of the tool." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Contactable" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F2",
+        "L1" ;
+    <hasID> "Contactable" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Contactable" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Content" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A3" ;
+    <hasID> "Content" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Content" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"Credit" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Credit" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Credit" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I3Requirement" .
+
+"Credit and link derived content" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "T1" ;
+    <hasID> "Credit and link derived content" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Credit and link derived content" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Currency" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R4" ;
+    <hasID> "Currency" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Currency" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Data are described with rich metadata" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F2" ;
+    <hasID> "Data are described with rich metadata" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Data are described with rich metadata" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F2Requirement" .
+
+"Data quality" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R4" ;
+    <hasID> "Data quality" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Data quality" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_3Requirement" .
+
+"Describe how metrics are tabulated" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1" ;
+    <hasID> "Describe how metrics are tabulated" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Describe how metrics are tabulated" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Design" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Design" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Design" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I1Requirement",
+        "FAIR.I2Requirement" .
+
+"Detailed Provenance" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-R1.2" ;
+    <hasID> "Detailed Provenance" ;
+    <hasMeasurementMethod> "Combination" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_R1.2" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Detailed Provenance" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Discoverable via search engines/applications" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F1" ;
+    <hasID> "Discoverable via search engines/applications" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Discoverable via search engines/applications" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F4Requirement" .
+
+"Do not reassign or delete" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Do not reassign or delete" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Do not reassign or delete" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" .
+
+"Document" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Document" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Document" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" .
+
+"Document flowthrough" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "L2" ;
+    <hasID> "Document flowthrough" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Document flowthrough" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Document how to cite" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "T2" ;
+    <hasID> "Document how to cite" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Document how to cite" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Document prefix and patterns" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Document prefix and patterns" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Document prefix and patterns" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I2Requirement" .
+
+"Documented" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A3",
+        "L1" ;
+    <hasID> "Documented" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Documented" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple",
+        "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Does the dataset have a PID (persistent identifier)?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F1a" ;
+    <hasID> "Does the dataset have a PID (persistent identifier)?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Does the dataset have a PID (persistent identifier)?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F1Requirement" .
+
+"Does the dataset have a user license?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1a" ;
+    <hasID> "Does the dataset have a user license?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Does the dataset have a user license?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Does the license clearly define the terms of continuing reuse free of any language that would require human or legal action or negotiation?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "B.1" ;
+    <hasID> "Does the license clearly define the terms of continuing reuse free of any language that would require human or legal action or negotiation?" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Does the license clearly define the terms of continuing reuse free of any language that would require human or legal action or negotiation?" ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Does the resource have a single license?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A.1" ;
+    <hasID> "Does the resource have a single license?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Does the resource have a single license?" ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Does the resource provide a \xe2\x80\x9creasonable and transparent\xe2\x80\x9d method of obtaining data?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "C.2" ;
+    <hasID> "Does the resource provide a \xe2\x80\x9creasonable and transparent\xe2\x80\x9d method of obtaining data?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Does the resource provide a \xe2\x80\x9creasonable and transparent\xe2\x80\x9d method of obtaining data?" ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"Does the resource provide a \xe2\x80\x9creasonable good-faith location\xe2\x80\x9d to access all data groupings with a single \\"action\\"?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "C.1" ;
+    <hasID> "Does the resource provide a \xe2\x80\x9creasonable good-faith location\xe2\x80\x9d to access all data groupings with a single \\"action\\"?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Does the resource provide a \xe2\x80\x9creasonable good-faith location\xe2\x80\x9d to access all data groupings with a single \\"action\\"?" ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"Does the resource use a standard license?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A.2" ;
+    <hasID> "Does the resource use a standard license?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Does the resource use a standard license?" ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Does the user license have any user restrictions for accessing the data?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2b" ;
+    <hasID> "Does the user license have any user restrictions for accessing the data?" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Does the user license have any user restrictions for accessing the data?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Downloads" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1" ;
+    <hasID> "Downloads" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Downloads" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"Dumps" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1" ;
+    <hasID> "Dumps" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Dumps" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"Embeddedness" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R2" ;
+    <hasID> "Embeddedness" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Embeddedness" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Evidence of community contribution and/or interaction" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1" ;
+    <hasID> "Evidence of community contribution and/or interaction" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Evidence of community contribution and/or interaction" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Exchange standards" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I2" ;
+    <hasID> "Exchange standards" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Exchange standards" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"Follow community standards" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "T2" ;
+    <hasID> "Follow community standards" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Follow community standards" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_3Requirement" .
+
+"I3" a "FAIR.criterionCode" .
+
+"Identifier Persistence" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-F1B" ;
+    <hasID> "Identifier Persistence" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_F1B" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Identifier Persistence" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F1Requirement" .
+
+"Indexed" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F2" ;
+    <hasID> "Indexed" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Indexed" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F3Requirement" .
+
+"Indexed in a searchable resource" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-F4" ;
+    <hasID> "Indexed in a searchable resource" ;
+    <hasMeasurementMethod> "Computable Action (e.g. HTTP get)" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_F4" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Indexed in a searchable resource" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F4Requirement" .
+
+"Information is provided describing how to cite the dataset." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "8" ;
+    <hasID> "Information is provided describing how to cite the dataset." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Information is provided describing how to cite the dataset." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "" .
+
+"Information is provided describing how to cite the tool." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "8" ;
+    <hasID> "Information is provided describing how to cite the tool." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "Information is provided describing how to cite the tool." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Information is provided on the experimental methods used to generate the data." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "3" ;
+    <hasID> "Information is provided on the experimental methods used to generate the data." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Information is provided on the experimental methods used to generate the data." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Is a standardised vocabulary, coding scheme or markup/tagging schema used in order to harmonise the information in the dataset?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I4b" ;
+    <hasID> "Is a standardised vocabulary, coding scheme or markup/tagging schema used in order to harmonise the information in the dataset?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is a standardised vocabulary, coding scheme or markup/tagging schema used in order to harmonise the information in the dataset?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple",
+        "FAIR.reusablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.I1Requirement",
+        "FAIR.R1_3Requirement" .
+
+"Is the data file in a proprietary format?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1a" ;
+    <hasID> "Is the data file in a proprietary format?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is the data file in a proprietary format?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"Is the data represented as linked data (e.g. in RDF format), so that it can be linked to other data?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I5a" ;
+    <hasID> "Is the data represented as linked data (e.g. in RDF format), so that it can be linked to other data?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is the data represented as linked data (e.g. in RDF format), so that it can be linked to other data?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.I3Requirement" .
+
+"Is the dataset available for public access? (i.e. the restriction is only registration on a website before the person has access the data)" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A4a" ;
+    <hasID> "Is the dataset available for public access? (i.e. the restriction is only registration on a website before the person has access the data)" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is the dataset available for public access? (i.e. the restriction is only registration on a website before the person has access the data)" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"Is the dataset completely open access with no restrictions?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A5a" ;
+    <hasID> "Is the dataset completely open access with no restrictions?" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is the dataset completely open access with no restrictions?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"Is the dataset multi-file?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "" ;
+    <hasID> "Is the dataset multi-file?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is the dataset multi-file?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isMapped> "1" .
+
+"Is the format therefore consistent with a \'preferred\' archival format?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I3a" ;
+    <hasID> "Is the format therefore consistent with a \'preferred\' archival format?" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is the format therefore consistent with a \'preferred\' archival format?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"Is the scoping of the license complete? " a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "B.2" ;
+    <hasID> "Is the scoping of the license complete? " ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Is the scoping of the license complete? " ;
+    dc:isPartOf "(Re)usable Data Project" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Is there extensive metadata and rich additional documentation available?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F5a" ;
+    <hasID> "Is there extensive metadata and rich additional documentation available?" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is there extensive metadata and rich additional documentation available?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F2Requirement" .
+
+"Is there sufficient metadata available?" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F1b" ;
+    <hasID> "Is there sufficient metadata available?" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Is there sufficient metadata available?" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F2Requirement" .
+
+"JSON" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2" ;
+    <hasID> "JSON" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "JSON" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"L2" a "FAIR.criterionCode" .
+
+"Licensing information is provided on the dataset\xe2\x80\x99s landing page." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "9" ;
+    <hasID> "Licensing information is provided on the dataset\xe2\x80\x99s landing page." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Licensing information is provided on the dataset\xe2\x80\x99s landing page." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Licensing information is provided on the tool\xe2\x80\x99s homepage." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "9" ;
+    <hasID> "Licensing information is provided on the tool\xe2\x80\x99s homepage." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "Licensing information is provided on the tool\xe2\x80\x99s homepage." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Link to original licenses/terms" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "L2" ;
+    <hasID> "Link to original licenses/terms" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Link to original licenses/terms" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Linked from external resources" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F1" ;
+    <hasID> "Linked from external resources" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Linked from external resources" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" .
+
+"Machine-readability of metadata" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-F2" ;
+    <hasID> "Machine-readability of metadata" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_F2" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Machine-readability of metadata" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F2Requirement" .
+
+"Mailing lists" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R3" ;
+    <hasID> "Mailing lists" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Mailing lists" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Make provenance information available for complex integrated data" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "T1" ;
+    <hasID> "Make provenance information available for complex integrated data" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Make provenance information available for complex integrated data" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Meets Community Standards" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-R1.3" ;
+    <hasID> "Meets Community Standards" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_R1.3" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Meets Community Standards" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_3Requirement" .
+
+"Metadata Longevity" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-A2" ;
+    <hasID> "Metadata Longevity" ;
+    <hasMeasurementMethod> "Combination" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_A2" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Metadata Longevity" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A2Requirement" .
+
+"Metadata clearly and explicitly include the identifier of the data it describes" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F3" ;
+    <hasID> "Metadata clearly and explicitly include the identifier of the data it describes" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Metadata clearly and explicitly include the identifier of the data it describes" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F3Requirement" .
+
+"Metadata documented" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F2" ;
+    <hasID> "Metadata documented" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Metadata documented" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F2Requirement" .
+
+"Metadata should be accessible even when the data is no longer available" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2" ;
+    <hasID> "Metadata should be accessible even when the data is no longer available" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Metadata should be accessible even when the data is no longer available" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A2Requirement" .
+
+"Minimally restrictive" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "L1" ;
+    <hasID> "Minimally restrictive" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Minimally restrictive" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Numerical" a "FAIR.scoringOutput" .
+
+"Ontologies" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I2" ;
+    <hasID> "Ontologies" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Ontologies" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I1Requirement",
+        "FAIR.I2Requirement" .
+
+"Paging" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2" ;
+    <hasID> "Paging" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Paging" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"Please indicate which of these statements is the most applicable to the dataset:  most, half, few, or none" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I2a" ;
+    <hasID> "Please indicate which of these statements is the most applicable to the dataset:  most, half, few, or none" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Please indicate which of these statements is the most applicable to the dataset:  most, half, few, or none" ;
+    dc:isPartOf "FAIRdat" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"Previous versions of the tool are made available." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "6" ;
+    <hasID> "Previous versions of the tool are made available." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "Previous versions of the tool are made available." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Prior versions" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I3" ;
+    <hasID> "Prior versions" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Prior versions" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Probability" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R4" ;
+    <hasID> "Probability" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Probability" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_3Requirement" .
+
+"Publications, case studies" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R2" ;
+    <hasID> "Publications, case studies" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Publications, case studies" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Query" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1" ;
+    <hasID> "Query" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Query" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"RESTful" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2" ;
+    <hasID> "RESTful" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "RESTful" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"Reference and display" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Reference and display" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Reference and display" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isMapped> "1" .
+
+"Reference with identifiers when relevant" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "T2" ;
+    <hasID> "Reference with identifiers when relevant" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Reference with identifiers when relevant" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Registered" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F1" ;
+    <hasID> "Registered" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Registered" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F4Requirement" .
+
+"Release notes" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R3" ;
+    <hasID> "Release notes" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Release notes" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Resource Identifier in Metadata" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-F3" ;
+    <hasID> "Resource Identifier in Metadata" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_F1B" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Resource Identifier in Metadata" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F3Requirement" .
+
+"Responsiveness" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R3" ;
+    <hasID> "Responsiveness" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Responsiveness" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Retrieval" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2" ;
+    <hasID> "Retrieval" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Retrieval" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"Searchable using various mechanisms" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "F2" ;
+    <hasID> "Searchable using various mechanisms" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Searchable using various mechanisms" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F4Requirement" .
+
+"Semantics/data structure" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I2" ;
+    <hasID> "Semantics/data structure" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Semantics/data structure" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I1Requirement",
+        "FAIR.I2Requirement" .
+
+"Simple, durable web resolution" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Simple, durable web resolution" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Simple, durable web resolution" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I2Requirement" .
+
+"Size of the user community/value" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1" ;
+    <hasID> "Size of the user community/value" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Size of the user community/value" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Source code is shared in a public repository and is documented." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "5" ;
+    <hasID> "Source code is shared in a public repository and is documented." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "Source code is shared in a public repository and is documented." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Standard licenses" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "L1" ;
+    <hasID> "Standard licenses" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Standard licenses" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"Stratified by key user groups" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1" ;
+    <hasID> "Stratified by key user groups" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Stratified by key user groups" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"T1" a "FAIR.criterionCode" .
+
+"Testimonials" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R2" ;
+    <hasID> "Testimonials" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Testimonials" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"The dataset can be downloaded for free from the repository." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "5" ;
+    <hasID> "The dataset can be downloaded for free from the repository." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "The dataset can be downloaded for free from the repository." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"The dataset is described with metadata using a formal, broadly applicable vocabulary." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "2" ;
+    <hasID> "The dataset is described with metadata using a formal, broadly applicable vocabulary." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "The dataset is described with metadata using a formal, broadly applicable vocabulary." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"The dataset is hosted in an established data repository, if a relevant repository exists." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "4" ;
+    <hasID> "The dataset is hosted in an established data repository, if a relevant repository exists." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "The dataset is hosted in an established data repository, if a relevant repository exists." ;
+    dc:isPartOf "FAIRshake" ;
+    <isMapped> "1" .
+
+"The protocol allows for an authentication and authorisation when required" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1.2" ;
+    <hasID> "The protocol allows for an authentication and authorisation when required" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "The protocol allows for an authentication and authorisation when required" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1_2Requirement" .
+
+"The protocol is open, free and universally implementable" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A1.1" ;
+    <hasID> "The protocol is open, free and universally implementable" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "The protocol is open, free and universally implementable" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1_1Requirement" .
+
+"The repository accepts data and metadata based on defined criteria to ensure relevance and understandability for data users." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R8" ;
+    <hasID> "The repository accepts data and metadata based on defined criteria to ensure relevance and understandability for data users." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository accepts data and metadata based on defined criteria to ensure relevance and understandability for data users." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"The repository adopts mechanism(s) to secure ongoing expert guidance and feedback (either inhouse, or external, including scientific guidance, if relevant)." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R6" ;
+    <hasID> "The repository adopts mechanism(s) to secure ongoing expert guidance and feedback (either inhouse, or external, including scientific guidance, if relevant)." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository adopts mechanism(s) to secure ongoing expert guidance and feedback (either inhouse, or external, including scientific guidance, if relevant)." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isMapped> "1" .
+
+"The repository applies documented processes and procedures in managing archival storage of the data." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R9" ;
+    <hasID> "The repository applies documented processes and procedures in managing archival storage of the data." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository applies documented processes and procedures in managing archival storage of the data." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "" .
+
+"The repository assumes responsibility for long-term preservation and manages this function in a planned and documented way." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R10" ;
+    <hasID> "The repository assumes responsibility for long-term preservation and manages this function in a planned and documented way." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository assumes responsibility for long-term preservation and manages this function in a planned and documented way." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A2Requirement" .
+
+"The repository enables reuse of the data over time, ensuring that appropriate metadata are available to support the understanding and use of the data." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R14" ;
+    <hasID> "The repository enables reuse of the data over time, ensuring that appropriate metadata are available to support the understanding and use of the data." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository enables reuse of the data over time, ensuring that appropriate metadata are available to support the understanding and use of the data." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement",
+        "FAIR.R1_1Requirement",
+        "FAIR.R1_2Requirement",
+        "FAIR.R1_3Requirement" .
+
+"The repository enables users to discover the data and refer to them in a persistent way through proper citation." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R13" ;
+    <hasID> "The repository enables users to discover the data and refer to them in a persistent way through proper citation." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository enables users to discover the data and refer to them in a persistent way through proper citation." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F1Requirement",
+        "FAIR.F2Requirement",
+        "FAIR.F3Requirement",
+        "FAIR.F4Requirement" .
+
+"The repository ensures, to the extent possible, that data are created, curated, accessed, and used in compliance with disciplinary and ethical norms." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R4" ;
+    <hasID> "The repository ensures, to the extent possible, that data are created, curated, accessed, and used in compliance with disciplinary and ethical norms." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository ensures, to the extent possible, that data are created, curated, accessed, and used in compliance with disciplinary and ethical norms." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_3Requirement" .
+
+"The repository functions on well-supported operating systems and other core infrastructural software and is using hardware and software technologies appropriate to the services it provides to its Designated Community." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R15" ;
+    <hasID> "The repository functions on well-supported operating systems and other core infrastructural software and is using hardware and software technologies appropriate to the services it provides to its Designated Community." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository functions on well-supported operating systems and other core infrastructural software and is using hardware and software technologies appropriate to the services it provides to its Designated Community." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"The repository guarantees the integrity and authenticity of the data." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R7" ;
+    <hasID> "The repository guarantees the integrity and authenticity of the data." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository guarantees the integrity and authenticity of the data." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.findablePrinciple",
+        "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F2Requirement",
+        "FAIR.R1_2Requirement" .
+
+"The repository has a continuity plan to ensure ongoing access to and preservation of its holdings." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R3" ;
+    <hasID> "The repository has a continuity plan to ensure ongoing access to and preservation of its holdings." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository has a continuity plan to ensure ongoing access to and preservation of its holdings." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A2Requirement" .
+
+"The repository has adequate funding and sufficient numbers of qualified staff managed through a clear system of governance to effectively carry out the mission." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R5" ;
+    <hasID> "The repository has adequate funding and sufficient numbers of qualified staff managed through a clear system of governance to effectively carry out the mission." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository has adequate funding and sufficient numbers of qualified staff managed through a clear system of governance to effectively carry out the mission." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "" .
+
+"The repository has an explicit mission to provide access to and preserve data in its domain" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1" ;
+    <hasID> "The repository has an explicit mission to provide access to and preserve data in its domain" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository has an explicit mission to provide access to and preserve data in its domain" ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"The repository has appropriate expertise to address technical data and metadata quality and ensures that sufficient information is available for end users to make quality-related evaluations." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R11" ;
+    <hasID> "The repository has appropriate expertise to address technical data and metadata quality and ensures that sufficient information is available for end users to make quality-related evaluations." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository has appropriate expertise to address technical data and metadata quality and ensures that sufficient information is available for end users to make quality-related evaluations." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple",
+        "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I3Requirement",
+        "FAIR.R1_3Requirement" .
+
+"The repository hosts data and metadata according to a set of defined criteria to ensure that the resources provided are consistent with the intent of the repository." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "6" ;
+    <hasID> "The repository hosts data and metadata according to a set of defined criteria to ensure that the resources provided are consistent with the intent of the repository." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository hosts data and metadata according to a set of defined criteria to ensure that the resources provided are consistent with the intent of the repository." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple",
+        "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I1Requirement",
+        "FAIR.R1Requirement" .
+
+"The repository maintains all applicable licenses covering data access and use and monitors compliance." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R2" ;
+    <hasID> "The repository maintains all applicable licenses covering data access and use and monitors compliance." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository maintains all applicable licenses covering data access and use and monitors compliance." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"The repository maintains licenses to manage data access and use." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "5" ;
+    <hasID> "The repository maintains licenses to manage data access and use." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository maintains licenses to manage data access and use." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.R1_1Requirement" .
+
+"The repository provides contact information for staff to enable users with questions or suggestions to interact with repository experts." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "3" ;
+    <hasID> "The repository provides contact information for staff to enable users with questions or suggestions to interact with repository experts." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository provides contact information for staff to enable users with questions or suggestions to interact with repository experts." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"The repository provides documentation for each resource to permit its complete and accurate citation." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "7" ;
+    <hasID> "The repository provides documentation for each resource to permit its complete and accurate citation." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository provides documentation for each resource to permit its complete and accurate citation." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"The repository uses a standardized protocol to permit access by users." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "2" ;
+    <hasID> "The repository uses a standardized protocol to permit access by users." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The repository uses a standardized protocol to permit access by users." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.A1Requirement" .
+
+"The structure of the repository permits efficient discovery of data and metadata by end users." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "1" ;
+    <hasID> "The structure of the repository permits efficient discovery of data and metadata by end users." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The structure of the repository permits efficient discovery of data and metadata by end users." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" .
+
+"The technical infrastructure of the repository provides for protection of the facility and its data, products, services, and users." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R16" ;
+    <hasID> "The technical infrastructure of the repository provides for protection of the facility and its data, products, services, and users." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "The technical infrastructure of the repository provides for protection of the facility and its data, products, services, and users." ;
+    dc:isPartOf "Core Trust Seal" ;
+    <isMapped> "1" .
+
+"The tool can be freely downloaded or accessed from a webpage." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "2" ;
+    <hasID> "The tool can be freely downloaded or accessed from a webpage." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "The tool can be freely downloaded or accessed from a webpage." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"The tool has a unique name and an informative description." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "1" ;
+    <hasID> "The tool has a unique name and an informative description." ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "The tool has a unique name and an informative description." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.findablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.F2Requirement" .
+
+"Tools that can be used to analyze each dataset are listed on the corresponding dataset pages." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "4" ;
+    <hasID> "Tools that can be used to analyze each dataset are listed on the corresponding dataset pages." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Tools that can be used to analyze each dataset are listed on the corresponding dataset pages." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I3Requirement" .
+
+"Track data processing " a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "T1" ;
+    <hasID> "Track data processing " ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Track data processing " ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1_2Requirement" .
+
+"Trackers" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R3" ;
+    <hasID> "Trackers" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Trackers" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"Tutorials" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A3" ;
+    <hasID> "Tutorials" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Tutorials" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple" ;
+    <isMapped> "0" .
+
+"Tutorials for the tool are available on the tool\xe2\x80\x99s homepage." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "4" ;
+    <hasID> "Tutorials for the tool are available on the tool\xe2\x80\x99s homepage." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Tool" ;
+    <hasTitle> "Tutorials for the tool are available on the tool\xe2\x80\x99s homepage." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" .
+
+"URIs clear and findable" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "URIs clear and findable" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "URIs clear and findable" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I2Requirement" .
+
+"Uniqueness" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R2" ;
+    <hasID> "Uniqueness" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Uniqueness" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isMapped> "1" .
+
+"Uptime" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2",
+        "R4" ;
+    <hasID> "Uptime" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Uptime" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.accessiblePrinciple",
+        "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Use FAIR Vocabularies" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-I2" ;
+    <hasID> "Use FAIR Vocabularies" ;
+    <hasMeasurementMethod> "Combination" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_I2" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Use FAIR Vocabularies" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I2Requirement" .
+
+"Use Quali\x1ced References" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-I3" ;
+    <hasID> "Use Quali\x1ced References" ;
+    <hasMeasurementMethod> "Combination" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_I3" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Use Quali\x1ced References" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I3Requirement" .
+
+"Use a Knowledge Representation Language" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "FM-I1" ;
+    <hasID> "Use a Knowledge Representation Language" ;
+    <hasMeasurementMethod> "Combination" ;
+    <hasOtherID> "https://purl.org/fair-metrics/FM_I1" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Use a Knowledge Representation Language" ;
+    dc:isPartOf "FAIR Metrics" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I1Requirement" .
+
+"Version information is provided for each resource, where available." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "9" ;
+    <hasID> "Version information is provided for each resource, where available." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Repository" ;
+    <hasTitle> "Version information is provided for each resource, where available." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Version information is provided for the dataset." a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "6" ;
+    <hasID> "Version information is provided for the dataset." ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "Data Set" ;
+    <hasTitle> "Version information is provided for the dataset." ;
+    dc:isPartOf "FAIRshake" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Version-management policy" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I1" ;
+    <hasID> "Version-management policy" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Version-management policy" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Versioned" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "A2" ;
+    <hasID> "Versioned" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Versioned" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"Well documented" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "I3" ;
+    <hasID> "Well documented" ;
+    <hasMeasurementMethod> "Present or Absent" ;
+    <hasOtherID> "Null" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "Well documented" ;
+    dc:isPartOf "FAIR-TLC" ;
+    <isAlignedWith> "FAIR.interoperablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.I3Requirement" .
+
+"meta(data) are richly described with a plurality of accurate and relevant attributes" a "FAIR.criterion",
+        "FAIR.criterionTitle" ;
+    <hasCode> "R1" ;
+    <hasID> "meta(data) are richly described with a plurality of accurate and relevant attributes" ;
+    <hasMeasurementMethod> "Qualitative Review" ;
+    <hasOtherID> "" ;
+    <hasResourceType> "All Resources" ;
+    <hasTitle> "meta(data) are richly described with a plurality of accurate and relevant attributes" ;
+    dc:isPartOf "FAIR Data Principles Explained" ;
+    <isAlignedWith> "FAIR.reusablePrinciple" ;
+    <isMapped> "0" ;
+    <mapsToRequirement> "FAIR.R1Requirement" .
+
+"All" a "FAIR.communityFocus" .
+
+"F1" a "FAIR.criterionCode" .
+
+"FAIR.A1_1Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.accessiblePrinciple" .
+
+"FAIR.A1_2Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.accessiblePrinciple" .
+
+"I2" a "FAIR.criterionCode" .
+
+"T2" a "FAIR.criterionCode" .
+
+"A1" a "FAIR.criterionCode" .
+
+"A3" a "FAIR.criterionCode" .
+
+"F2" a "FAIR.criterionCode" .
+
+"FAIR.F1Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.findablePrinciple" .
+
+"FAIR.F3Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.findablePrinciple" .
+
+"L1" a "FAIR.criterionCode" .
+
+"R2" a "FAIR.criterionCode" .
+
+"Unknown" a dc:license,
+        "FAIR.Contact",
+        "FAIR.licenseType",
+        "FAIR.version" .
+
+"FAIR.A2Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.accessiblePrinciple" .
+
+"R1" a "FAIR.criterionCode" .
+
+"R3" a "FAIR.criterionCode" .
+
+"R4" a "FAIR.criterionCode" .
+
+"FAIR.F4Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.findablePrinciple" .
+
+"A2" a "FAIR.criterionCode" .
+
+"Combination" a "FAIR.criterionMeasurementMethod",
+        "FAIR.scoringOutput" .
+
+"FAIR.F2Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.findablePrinciple" .
+
+"FAIR.I3Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.interoperablePrinciple" .
+
+"FAIR.R1_3Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.reusablePrinciple" .
+
+"Tool" a "FAIR.criterionResourceType" .
+
+"(Re)usable Data Project" a "FAIR.rubric",
+        "FAIR.rubricTitle" ;
+    <createdBy> "Seth Carbon, Robin Champieux, Julie McMurry, Lilly Winfree, Letisha Wyatt, Melissa Haendel" ;
+    <hasCertificationMethod> "" ;
+    <hasCommunityFocus> "Biomedical" ;
+    <hasID> "(Re)usable Data Project" ;
+    <hasImplementationEvidence> "1" ;
+    <hasScoringMethod> "1" ;
+    <hasScoringOutput> "Numerical" ;
+    <hasTitle> "(Re)usable Data Project" ;
+    <hasWebsite> "http://reusabledata.org/" ;
+    dc:hasPart "Are different types of downstream reuse distinguished as allowable or as forbidden?",
+        "Are different types of person groups or \xe2\x80\x9cagents\xe2\x80\x9d distinguished?",
+        "Does the license clearly define the terms of continuing reuse free of any language that would require human or legal action or negotiation?",
+        "Does the resource have a single license?",
+        "Does the resource provide a \xe2\x80\x9creasonable and transparent\xe2\x80\x9d method of obtaining data?",
+        "Does the resource provide a \xe2\x80\x9creasonable good-faith location\xe2\x80\x9d to access all data groupings with a single \\"action\\"?",
+        "Does the resource use a standard license?",
+        "Is the scoping of the license complete? " ;
+    dc:hasVersion "unknown" ;
+    <isContactFor> "Seth Carbon" .
+
+"FAIR.A1Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.accessiblePrinciple" .
+
+"FAIR.I2Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.interoperablePrinciple" .
+
+"I1" a "FAIR.criterionCode" .
+
+"FAIR.I1Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.interoperablePrinciple" .
+
+"FAIR Metrics" a "FAIR.rubric",
+        "FAIR.rubricTitle" ;
+    <createdBy> "Mark Wilkinson, Susanna Sansone, Michel Dumontier, Peter Doorn, Luiz Olavo Bonino, Erik Schultes" ;
+    <hasCertificationMethod> "0" ;
+    <hasCommunityFocus> "All" ;
+    <hasID> "FAIR Metrics" ;
+    <hasImplementationEvidence> "1" ;
+    <hasScoringMethod> "1" ;
+    <hasScoringOutput> "Color Coded" ;
+    <hasTitle> "FAIR Metrics" ;
+    <hasWebsite> "https://zenodo.org/record/1305060#.Wz_JAJMbOqA" ;
+    dc:hasPart "Access Authorization",
+        "Access Protocol",
+        "Accessible Usage License",
+        "Detailed Provenance",
+        "Identifier Persistence",
+        "Indexed in a searchable resource",
+        "Machine-readability of metadata",
+        "Meets Community Standards",
+        "Metadata Longevity",
+        "Resource Identifier in Metadata",
+        "Use FAIR Vocabularies",
+        "Use Quali\x1ced References",
+        "Use a Knowledge Representation Language" ;
+    dc:hasVersion "V1.0.4" ;
+    <isContactFor> "Null" .
+
+"FAIR.R1_2Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.reusablePrinciple" .
+
+"FAIR.R1Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.reusablePrinciple" .
+
+"FAIR Data Principles Explained" a "FAIR.rubric",
+        "FAIR.rubricTitle" ;
+    <createdBy> "Erik Schultes (Editor), DTL; Luiz Bonino, DTL; Michel Dumontier, Maastricht University; S.C. Edmunds, Executive Editor Giga Science; Sarah Gerster, Swiss National Science Foundation; Peter-Bram \xe2\x80\x98t Hoen, LUMC; Albert Mons, DTL; Mark Wilkinson, UPM" ;
+    <hasCertificationMethod> "0" ;
+    <hasCommunityFocus> "All" ;
+    <hasID> "FAIR Data Principles Explained" ;
+    <hasImplementationEvidence> "0" ;
+    <hasScoringMethod> "0" ;
+    <hasScoringOutput> "Null" ;
+    <hasTitle> "FAIR Data Principles Explained" ;
+    <hasWebsite> "https://www.dtls.nl/fair-data/fair-principles-explained/" ;
+    dc:hasPart "(meta) data are assigned globally unique and persistent identifiers",
+        "(meta)data are associated with detailed provenance",
+        "(meta)data are registered or indexed in a searchable resource",
+        "(meta)data are released with a clear and accessible data usage license",
+        "(meta)data are retrievable by their identifier using a standardised communication protocol",
+        "(meta)data include qualified references to other (meta)data",
+        "(meta)data meet domain-relevant community standards",
+        "(meta)data use a formal, accessible, shared and broadly applicable language for knowledge representation",
+        "(meta)data use vocabularies that follow the FAIR principles",
+        "Data are described with rich metadata",
+        "Metadata clearly and explicitly include the identifier of the data it describes",
+        "Metadata should be accessible even when the data is no longer available",
+        "The protocol allows for an authentication and authorisation when required",
+        "The protocol is open, free and universally implementable",
+        "meta(data) are richly described with a plurality of accurate and relevant attributes" ;
+    dc:hasVersion "Unknown" ;
+    <isContactFor> "Unknown" .
+
+"FAIRdat" a "FAIR.rubric",
+        "FAIR.rubricTitle" ;
+    <createdBy> "Peter Doorn, Elly Dijk and Marjan Grootveld, Data Archiving and Networked Services/DANS" ;
+    <hasCertificationMethod> "0" ;
+    <hasCommunityFocus> "All" ;
+    <hasID> "FAIRdat" ;
+    <hasImplementationEvidence> "0" ;
+    <hasScoringMethod> "1" ;
+    <hasScoringOutput> "Numerical" ;
+    <hasTitle> "FAIRdat" ;
+    <hasWebsite> "https://docs.google.com/document/d/1bRQDN_VFSPSMnsADLyzky-sbd6ZPArsHOcYhERdyrL8/edit" ;
+    dc:hasPart "Are all of the data files in a proprietary format?",
+        "Are the metadata accessible",
+        "Does the dataset have a PID (persistent identifier)?",
+        "Does the dataset have a user license?",
+        "Does the user license have any user restrictions for accessing the data?",
+        "Is a standardised vocabulary, coding scheme or markup/tagging schema used in order to harmonise the information in the dataset?",
+        "Is the data file in a proprietary format?",
+        "Is the data represented as linked data (e.g. in RDF format), so that it can be linked to other data?",
+        "Is the dataset available for public access? (i.e. the restriction is only registration on a website before the person has access the data)",
+        "Is the dataset completely open access with no restrictions?",
+        "Is the dataset multi-file?",
+        "Is the format therefore consistent with a \'preferred\' archival format?",
+        "Is there extensive metadata and rich additional documentation available?",
+        "Is there sufficient metadata available?",
+        "Please indicate which of these statements is the most applicable to the dataset:  most, half, few, or none" ;
+    dc:hasVersion "unknown" ;
+    <isContactFor> "Unknown" .
+
+"FAIR.R1_1Requirement" a "FAIR.requirement" ;
+    dc:isPartOf "FAIR.reusablePrinciple" .
+
+"Core Trust Seal" a "FAIR.Authors",
+        "FAIR.rubric",
+        "FAIR.rubricTitle" ;
+    <createdBy> "Core Trust Seal" ;
+    <hasCertificationMethod> "1" ;
+    <hasCommunityFocus> "All" ;
+    <hasID> "Core Trust Seal" ;
+    <hasImplementationEvidence> "1" ;
+    <hasScoringMethod> "1" ;
+    <hasScoringOutput> "Numerical" ;
+    <hasTitle> "Core Trust Seal" ;
+    <hasWebsite> "https://www.coretrustseal.org/wp-content/uploads/2017/01/Core_Trustworthy_Data_Repositories_Requirements_01_00.pdf" ;
+    dc:hasPart "Archiving takes place according to defined workflows from ingest to dissemination.",
+        "The repository accepts data and metadata based on defined criteria to ensure relevance and understandability for data users.",
+        "The repository adopts mechanism(s) to secure ongoing expert guidance and feedback (either inhouse, or external, including scientific guidance, if relevant).",
+        "The repository applies documented processes and procedures in managing archival storage of the data.",
+        "The repository assumes responsibility for long-term preservation and manages this function in a planned and documented way.",
+        "The repository enables reuse of the data over time, ensuring that appropriate metadata are available to support the understanding and use of the data.",
+        "The repository enables users to discover the data and refer to them in a persistent way through proper citation.",
+        "The repository ensures, to the extent possible, that data are created, curated, accessed, and used in compliance with disciplinary and ethical norms.",
+        "The repository functions on well-supported operating systems and other core infrastructural software and is using hardware and software technologies appropriate to the services it provides to its Designated Community.",
+        "The repository guarantees the integrity and authenticity of the data.",
+        "The repository has a continuity plan to ensure ongoing access to and preservation of its holdings.",
+        "The repository has adequate funding and sufficient numbers of qualified staff managed through a clear system of governance to effectively carry out the mission.",
+        "The repository has an explicit mission to provide access to and preserve data in its domain",
+        "The repository has appropriate expertise to address technical data and metadata quality and ensures that sufficient information is available for end users to make quality-related evaluations.",
+        "The repository maintains all applicable licenses covering data access and use and monitors compliance.",
+        "The technical infrastructure of the repository provides for protection of the facility and its data, products, services, and users." ;
+    dc:hasVersion "v01.00" ;
+    <isContactFor> "Unknown" .
+
+"1" a "FAIR.certificationMethod",
+        "FAIR.criterionCode",
+        "FAIR.implementationEvidence",
+        "FAIR.mappingType",
+        "FAIR.scoringMethod" .
+
+"Data Set" a "FAIR.criterionResourceType" .
+
+"FAIR.findablePrinciple" a "FAIR.principle" ;
+    dc:hasPart "FAIR.F1Requirement",
+        "FAIR.F2Requirement",
+        "FAIR.F3Requirement",
+        "FAIR.F4Requirement" .
+
+"FAIRshake" a "FAIR.rubric",
+        "FAIR.rubricTitle" ;
+    <createdBy> "Ma\'ayan Laboratory of Computational Systems Biology" ;
+    <hasCertificationMethod> "1" ;
+    <hasCommunityFocus> "Biomedical" ;
+    <hasID> "FAIRshake" ;
+    <hasImplementationEvidence> "1" ;
+    <hasScoringMethod> "1" ;
+    <hasScoringOutput> "Combination" ;
+    <hasTitle> "FAIRshake" ;
+    <hasWebsite> "http://54.175.203.110/fairshake" ;
+    dc:hasPart "A description of the methods used to acquire the data is provided.",
+        "A paper about the tool has been published.",
+        "A standardized ID or accession number is used to identify the dataset.",
+        "Contact information is provided for the creator(s) of the dataset.",
+        "Contact information is provided for the creator(s) of the tool.",
+        "Information is provided describing how to cite the dataset.",
+        "Information is provided describing how to cite the tool.",
+        "Information is provided on the experimental methods used to generate the data.",
+        "Licensing information is provided on the dataset\xe2\x80\x99s landing page.",
+        "Licensing information is provided on the tool\xe2\x80\x99s homepage.",
+        "Previous versions of the tool are made available.",
+        "Source code is shared in a public repository and is documented.",
+        "The dataset can be downloaded for free from the repository.",
+        "The dataset is described with metadata using a formal, broadly applicable vocabulary.",
+        "The dataset is hosted in an established data repository, if a relevant repository exists.",
+        "The repository hosts data and metadata according to a set of defined criteria to ensure that the resources provided are consistent with the intent of the repository.",
+        "The repository maintains licenses to manage data access and use.",
+        "The repository provides contact information for staff to enable users with questions or suggestions to interact with repository experts.",
+        "The repository provides documentation for each resource to permit its complete and accurate citation.",
+        "The repository uses a standardized protocol to permit access by users.",
+        "The structure of the repository permits efficient discovery of data and metadata by end users.",
+        "The tool can be freely downloaded or accessed from a webpage.",
+        "The tool has a unique name and an informative description.",
+        "Tools that can be used to analyze each dataset are listed on the corresponding dataset pages.",
+        "Tutorials for the tool are available on the tool\xe2\x80\x99s homepage.",
+        "Version information is provided for each resource, where available.",
+        "Version information is provided for the dataset." ;
+    dc:hasVersion "Unknown" ;
+    <isContactFor> "" .
+
+"FAIR.interoperablePrinciple" a "FAIR.principle" ;
+    dc:hasPart "FAIR.I1Requirement",
+        "FAIR.I2Requirement",
+        "FAIR.I3Requirement" .
+
+"Data Repository" a "FAIR.criterionResourceType" .
+
+"FAIR.accessiblePrinciple" a "FAIR.principle" ;
+    dc:hasPart "FAIR.A1Requirement",
+        "FAIR.A1_1Requirement",
+        "FAIR.A1_2Requirement",
+        "FAIR.A2Requirement" .
+
+"Qualitative Review" a "FAIR.criterionMeasurementMethod" .
+
+"FAIR-TLC" a "FAIR.rubric",
+        "FAIR.rubricTitle" ;
+    <createdBy> "Melissa Haendel, Andrew Su, Julie McMurry, Christopher G Chute, Chris Mungall, Benjamin Good, Chunlei Wu, Shannon McWeeney, Harry Hochheiser, Peter Robinson, Maureen Hoatlin, Matthew Brush, Damian Smedley, Monica Munoz-Torres, Guoqian Jiang, Hongfang Liu, Peter McQuilton, Tom Conlin" ;
+    <hasCertificationMethod> "0" ;
+    <hasCommunityFocus> "Biomedical" ;
+    <hasID> "FAIR-TLC" ;
+    <hasImplementationEvidence> "0" ;
+    <hasScoringMethod> "0" ;
+    <hasScoringOutput> "Null" ;
+    <hasTitle> "FAIR-TLC" ;
+    <hasWebsite> "https://zenodo.org/record/203295#.WzaT7SAnbIV" ;
+    dc:hasPart "API",
+        "Access",
+        "Advisers",
+        "Attribute organizations",
+        "Audience",
+        "Authorization for redistribution",
+        "Avoid embedding meaning",
+        "Browsable",
+        "Clear",
+        "Comprehensiveness",
+        "Connectedness",
+        "Contactable",
+        "Content",
+        "Credit",
+        "Credit and link derived content",
+        "Currency",
+        "Data quality",
+        "Describe how metrics are tabulated",
+        "Design",
+        "Discoverable via search engines/applications",
+        "Do not reassign or delete",
+        "Document",
+        "Document flowthrough",
+        "Document how to cite",
+        "Document prefix and patterns",
+        "Documented",
+        "Downloads",
+        "Dumps",
+        "Embeddedness",
+        "Evidence of community contribution and/or interaction",
+        "Exchange standards",
+        "Follow community standards",
+        "Indexed",
+        "JSON",
+        "Link to original licenses/terms",
+        "Linked from external resources",
+        "Mailing lists",
+        "Make provenance information available for complex integrated data",
+        "Metadata documented",
+        "Minimally restrictive",
+        "Ontologies",
+        "Paging",
+        "Prior versions",
+        "Probability",
+        "Publications, case studies",
+        "Query",
+        "RESTful",
+        "Reference and display",
+        "Reference with identifiers when relevant",
+        "Registered",
+        "Release notes",
+        "Responsiveness",
+        "Retrieval",
+        "Searchable using various mechanisms",
+        "Semantics/data structure",
+        "Simple, durable web resolution",
+        "Size of the user community/value",
+        "Standard licenses",
+        "Stratified by key user groups",
+        "Testimonials",
+        "Track data processing ",
+        "Trackers",
+        "Tutorials",
+        "URIs clear and findable",
+        "Uniqueness",
+        "Uptime",
+        "Version-management policy",
+        "Versioned",
+        "Well documented" ;
+    dc:hasVersion "Null" ;
+    <isContactFor> "Melissa Haendel, Andrew Su, Julie McMurry" .
+
+"Null" a "FAIR.Contact",
+        "FAIR.criterionOtherID",
+        "FAIR.scoringOutput",
+        "FAIR.version" .
+
+"FAIR.reusablePrinciple" a "FAIR.principle" ;
+    dc:hasPart "FAIR.R1Requirement",
+        "FAIR.R1_1Requirement",
+        "FAIR.R1_2Requirement",
+        "FAIR.R1_Requirement" .
+
+"All Resources" a "FAIR.criterionResourceType" .
+
+"" a "FAIR.Contact",
+        "FAIR.certificationMethod",
+        "FAIR.criterionCode",
+        "FAIR.criterionOtherID",
+        "FAIR.mappingType" .
+
+"Present or Absent" a "FAIR.criterionMeasurementMethod" .
+
+"0" a "FAIR.certificationMethod",
+        "FAIR.implementationEvidence",
+        "FAIR.mappingType",
+        "FAIR.scoringMethod" .
+
+'
