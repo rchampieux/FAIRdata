@@ -1,4 +1,4 @@
-#!/home/ubuntu/.conda/envs/rdf/bin/python
+
 
 filename="in/FAIR_Landscape_V1.0.0-Evaluation.tsv";
 
@@ -6,8 +6,9 @@ import rdflib
 
 from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
 from rdflib.namespace import DC
+from rdflib.namespace import XSD
 
-FAIRURL="http://example.org/fair/"
+FAIRURL=""
 EMPTY_STRING="unk" # what to do with empty strings?
 
 FAIR = Namespace(FAIRURL)
@@ -16,69 +17,69 @@ g = Graph()
 # Set up the Principles (columns of the curated spreadsheet)
 
 # Findable
-g.add( (FAIR.findablePrinciple, RDF.type, FAIR.principle) )
+g.add( (Literal("FAIR.findablePrinciple"), RDF.type, Literal("FAIR.principle")) )
 ## requirements
-g.add( (FAIR.F1Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.F2Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.F3Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.F4Requirement, RDF.type, FAIR.requirement) )
+g.add( (Literal("FAIR.F1Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.F2Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.F3Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.F4Requirement"), RDF.type, Literal("FAIR.requirement")) )
 ## set forward and backwards pointers
-g.add( (FAIR.findablePrinciple, DC.hasPart, FAIR.F1Requirement) )
-g.add( (FAIR.F1Requirement, DC.isPartOf, FAIR.findablePrinciple) )
-g.add( (FAIR.findablePrinciple, DC.hasPart, FAIR.F2Requirement) )
-g.add( (FAIR.F2Requirement, DC.isPartOf, FAIR.findablePrinciple) )
-g.add( (FAIR.findablePrinciple, DC.hasPart, FAIR.F3Requirement) )
-g.add( (FAIR.F3Requirement, DC.isPartOf, FAIR.findablePrinciple) )
-g.add( (FAIR.findablePrinciple, DC.hasPart, FAIR.F4Requirement) )
-g.add( (FAIR.F4Requirement, DC.isPartOf, FAIR.findablePrinciple) )
+g.add( (Literal("FAIR.findablePrinciple"), DC.hasPart, Literal("FAIR.F1Requirement")) )
+g.add( (Literal("FAIR.F1Requirement"), DC.isPartOf, Literal("FAIR.findablePrinciple")) )
+g.add( (Literal("FAIR.findablePrinciple"), DC.hasPart, Literal("FAIR.F2Requirement")) )
+g.add( (Literal("FAIR.F2Requirement"), DC.isPartOf, Literal("FAIR.findablePrinciple")) )
+g.add( (Literal("FAIR.findablePrinciple"), DC.hasPart, Literal("FAIR.F3Requirement")) )
+g.add( (Literal("FAIR.F3Requirement"), DC.isPartOf, Literal("FAIR.findablePrinciple")) )
+g.add( (Literal("FAIR.findablePrinciple"), DC.hasPart, Literal("FAIR.F4Requirement")) )
+g.add( (Literal("FAIR.F4Requirement"), DC.isPartOf, Literal("FAIR.findablePrinciple")) )
 
 # Accessible
-g.add( (FAIR.accessiblePrinciple, RDF.type, FAIR.principle) )
+g.add( (Literal("FAIR.accessiblePrinciple"), RDF.type, Literal("FAIR.principle")) )
 ## requirements
-g.add( (FAIR.A1Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.A1_1Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.A1_2Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.A2Requirement, RDF.type, FAIR.requirement) )
+g.add( (Literal("FAIR.A1Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.A1_1Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.A1_2Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.A2Requirement"), RDF.type, Literal("FAIR.requirement")) )
 ## set forward and backwards pointers
-g.add( (FAIR.accessiblePrinciple, DC.hasPart, FAIR.A1Requirement) )
-g.add( (FAIR.A1Requirement, DC.isPartOf, FAIR.accessiblePrinciple) )
-g.add( (FAIR.accessiblePrinciple, DC.hasPart, FAIR.A1_1Requirement) )
-g.add( (FAIR.A1_1Requirement, DC.isPartOf, FAIR.accessiblePrinciple) )
-g.add( (FAIR.accessiblePrinciple, DC.hasPart, FAIR.A1_2Requirement) )
-g.add( (FAIR.A1_2Requirement, DC.isPartOf, FAIR.accessiblePrinciple) )
-g.add( (FAIR.accessiblePrinciple, DC.hasPart, FAIR.A2Requirement) )
-g.add( (FAIR.A2Requirement, DC.isPartOf, FAIR.accessiblePrinciple) )
+g.add( (Literal("FAIR.accessiblePrinciple"), DC.hasPart, Literal("FAIR.A1Requirement")) )
+g.add( (Literal("FAIR.A1Requirement"), DC.isPartOf, Literal("FAIR.accessiblePrinciple")) )
+g.add( (Literal("FAIR.accessiblePrinciple"), DC.hasPart, Literal("FAIR.A1_1Requirement")) )
+g.add( (Literal("FAIR.A1_1Requirement"), DC.isPartOf, Literal("FAIR.accessiblePrinciple")) )
+g.add( (Literal("FAIR.accessiblePrinciple"), DC.hasPart, Literal("FAIR.A1_2Requirement")) )
+g.add( (Literal("FAIR.A1_2Requirement"), DC.isPartOf, Literal("FAIR.accessiblePrinciple")) )
+g.add( (Literal("FAIR.accessiblePrinciple"), DC.hasPart, Literal("FAIR.A2Requirement")) )
+g.add( (Literal("FAIR.A2Requirement"), DC.isPartOf, Literal("FAIR.accessiblePrinciple")) )
 
 # Interoperable
-g.add( (FAIR.interoperablePrinciple, RDF.type, FAIR.principle) )
+g.add( (Literal("FAIR.interoperablePrinciple"), RDF.type, Literal("FAIR.principle")) )
 ## requirements
-g.add( (FAIR.I1Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.I2Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.I3Requirement, RDF.type, FAIR.requirement) )
+g.add( (Literal("FAIR.I1Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.I2Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.I3Requirement"), RDF.type, Literal("FAIR.requirement")) )
 ## set forward and backwards pointers
-g.add( (FAIR.interoperablePrinciple, DC.hasPart, FAIR.I1Requirement) )
-g.add( (FAIR.I1Requirement, DC.isPartOf, FAIR.interoperablePrinciple) )
-g.add( (FAIR.interoperablePrinciple, DC.hasPart, FAIR.I2Requirement) )
-g.add( (FAIR.I2Requirement, DC.isPartOf, FAIR.interoperablePrinciple) )
-g.add( (FAIR.interoperablePrinciple, DC.hasPart, FAIR.I3Requirement) )
-g.add( (FAIR.I3Requirement, DC.isPartOf, FAIR.interoperablePrinciple) )
+g.add( (Literal("FAIR.interoperablePrinciple"), DC.hasPart, Literal("FAIR.I1Requirement")) )
+g.add( (Literal("FAIR.I1Requirement"), DC.isPartOf, Literal("FAIR.interoperablePrinciple")) )
+g.add( (Literal("FAIR.interoperablePrinciple"), DC.hasPart, Literal("FAIR.I2Requirement")) )
+g.add( (Literal("FAIR.I2Requirement"), DC.isPartOf, Literal("FAIR.interoperablePrinciple")) )
+g.add( (Literal("FAIR.interoperablePrinciple"), DC.hasPart, Literal("FAIR.I3Requirement")) )
+g.add( (Literal("FAIR.I3Requirement"), DC.isPartOf, Literal("FAIR.interoperablePrinciple")) )
 
 # Reusable
-g.add( (FAIR.reusablePrinciple, RDF.type, FAIR.principle) )
+g.add( (Literal("FAIR.reusablePrinciple"), RDF.type, Literal("FAIR.principle")) )
 ## requirements
-g.add( (FAIR.R1Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.R1_1Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.R1_2Requirement, RDF.type, FAIR.requirement) )
-g.add( (FAIR.R1_3Requirement, RDF.type, FAIR.requirement) )
+g.add( (Literal("FAIR.R1Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.R1_1Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.R1_2Requirement"), RDF.type, Literal("FAIR.requirement")) )
+g.add( (Literal("FAIR.R1_3Requirement"), RDF.type, Literal("FAIR.requirement")) )
 ## set forward and backwards pointers
-g.add( (FAIR.reusablePrinciple, DC.hasPart, FAIR.R1Requirement) )
-g.add( (FAIR.R1Requirement, DC.isPartOf, FAIR.reusablePrinciple) )
-g.add( (FAIR.reusablePrinciple, DC.hasPart, FAIR.R1_1Requirement) )
-g.add( (FAIR.R1_1Requirement, DC.isPartOf, FAIR.reusablePrinciple) )
-g.add( (FAIR.reusablePrinciple, DC.hasPart, FAIR.R1_2Requirement) )
-g.add( (FAIR.R1_2Requirement, DC.isPartOf, FAIR.reusablePrinciple) )
-g.add( (FAIR.reusablePrinciple, DC.hasPart, FAIR.R1_Requirement) )
-g.add( (FAIR.R1_3Requirement, DC.isPartOf, FAIR.reusablePrinciple) )
+g.add( (Literal("FAIR.reusablePrinciple"), DC.hasPart, Literal("FAIR.R1Requirement")) )
+g.add( (Literal("FAIR.R1Requirement"), DC.isPartOf, Literal("FAIR.reusablePrinciple")) )
+g.add( (Literal("FAIR.reusablePrinciple"), DC.hasPart, Literal("FAIR.R1_1Requirement")) )
+g.add( (Literal("FAIR.R1_1Requirement"), DC.isPartOf, Literal("FAIR.reusablePrinciple")) )
+g.add( (Literal("FAIR.reusablePrinciple"), DC.hasPart, Literal("FAIR.R1_2Requirement")) )
+g.add( (Literal("FAIR.R1_2Requirement"), DC.isPartOf, Literal("FAIR.reusablePrinciple")) )
+g.add( (Literal("FAIR.reusablePrinciple"), DC.hasPart, Literal("FAIR.R1_Requirement")) )
+g.add( (Literal("FAIR.R1_3Requirement"), DC.isPartOf, Literal("FAIR.reusablePrinciple")) )
 
 
 import csv
@@ -93,98 +94,98 @@ with open(filename) as tsvfile:
   x=next(reader) # skip first 4 lines
   x=next(reader) # skip first 4 lines
   for line in reader:
-    rubricName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"title":line[0]})))
+    rubricName=Literal(line[0])
     if(rubricName in rubrics):
       # xxx check for consistency
       rubricID=rubrics[rubricName]
     else:
-      rubricID=rdflib.term.URIRef(FAIRURL+str(uuid.uuid4()))
+      rubricID=Literal(str(uuid.uuid4()))
       rubrics[rubricName]=rubricID
-      g.add( (rubricID, RDF.type, FAIR.rubric) )
-      g.add( (rubricName, RDF.type, FAIR.rubricTitle) )
+      g.add( (rubricID, RDF.type, Literal("FAIR.rubric") ) )
+      g.add( (rubricName, RDF.type, Literal("FAIR.rubricTitle") ) )
       g.add( (rubricID, FAIR.hasTitle, rubricName) )
       g.add( (rubricName, FAIR.hasID, rubricID) )
       #
-      authorNames=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"authors":line[1]})))
-      g.add( (authorNames, RDF.type, FAIR.Authors) )
+      authorNames=Literal(line[1])
+      g.add( (authorNames, RDF.type, Literal("FAIR.Authors") ) )
       g.add( (rubricID, FAIR.createdBy, authorNames) )
       #
-      contactName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"contact":line[2]})))
-      g.add( (contactName, RDF.type, FAIR.Contact) )
+      contactName=Literal(line[2])
+      g.add( (contactName, RDF.type, Literal("FAIR.Contact") ) )
       g.add( (rubricID, FAIR.isContactFor, contactName) )
       #      
-      versionName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"version":line[3]})))
-      g.add( (versionName, RDF.type, FAIR.version) )
+      versionName=Literal(line[3])
+      g.add( (versionName, RDF.type, Literal("FAIR.version") ) )
       g.add( (rubricID, DC.hasVersion, versionName) )
       #      
       # xxx provenance? citedBy? 
-      websiteName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"website":line[4]})))
-      g.add( (websiteName, RDF.type, FAIR.website) )
+      websiteName=Literal(line[4])
+      g.add( (websiteName, RDF.type, Literal("FAIR.website") ) )
       g.add( (rubricID, FAIR.hasWebsite, websiteName) )
       #      
 
-      licenseName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"license":line[5]})))
+      licenseName=Literal(line[5])
       if(licenseName in licenses):
         # xxx check for consistency
         y=1
       else: 
         licenses.append(licenseName)
-        licenseType = rdflib.term.URIRef(FAIRURL+line[6])
+        licenseType = Literal(line[6])
         # xxx check if license already has a type, otherwise set it 
         g.add( (licenseName, RDF.type, DC.license) )
-        g.add( (licenseType, RDF.type, FAIR.licenseType) )
+        g.add( (licenseType, RDF.type, Literal("FAIR.licenseType") ) )
         # xxx subclass it 
         # g.add( license, RDF.class, licenseType) # xxx
         #      
-      g.add( (rdflib.term.URIRef(FAIRURL+line[7]), RDF.type, FAIR.certificationMethod) )
-      g.add( (rubricID, FAIR.hasCertificationMethod, rdflib.term.URIRef(FAIRURL+line[7])) )
+      g.add( (Literal(line[7]), RDF.type, Literal("FAIR.certificationMethod") ) )
+      g.add( (rubricID, FAIR.hasCertificationMethod, Literal(line[7])) )
       #      
-      methodName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"scoringMethod":line[8]})))
-      g.add( (methodName, RDF.type, FAIR.scoringMethod) )
+      methodName=Literal(line[8])
+      g.add( (methodName, RDF.type, Literal("FAIR.scoringMethod") ) )
       g.add( (rubricID, FAIR.hasScoringMethod, methodName) )
       #      
-      outputName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"scoringOutput":line[9]})))
-      g.add( (outputName, RDF.type, FAIR.scoringOutput) )
+      outputName=Literal(line[9])
+      g.add( (outputName, RDF.type, Literal("FAIR.scoringOutput") ) )
       g.add( (rubricID, FAIR.hasScoringOutput, outputName) )
       #      
-      g.add( (rdflib.term.URIRef(FAIRURL+line[10]), RDF.type, FAIR.implementationEvidence) )
-      g.add( (rubricID, FAIR.hasImplementationEvidence, rdflib.term.URIRef(FAIRURL+line[10])) )
+      g.add( (Literal(line[10]), RDF.type, Literal("FAIR.implementationEvidence") ) )
+      g.add( (rubricID, FAIR.hasImplementationEvidence, Literal(line[10])) )
       #      
-      g.add( (rdflib.term.URIRef(FAIRURL+line[11]), RDF.type, FAIR.communityFocus) )
-      g.add( (rubricID, FAIR.hasCommunityFocus, rdflib.term.URIRef(FAIRURL+line[11])) )
+      g.add( (Literal(line[11]), RDF.type, Literal("FAIR.communityFocus") ) )
+      g.add( (rubricID, FAIR.hasCommunityFocus, Literal(line[11])) )
       #
     # criteria
-    criterionName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"criterionTitle":line[12]})))
-    criterionID=rdflib.term.URIRef(FAIRURL+str(uuid.uuid4()))
-    g.add( (criterionID, RDF.type, FAIR.criterion) )
-    g.add( (criterionName, RDF.type, FAIR.criterionTitle) )
+    criterionName=Literal(line[12])
+    criterionID=Literal(str(uuid.uuid4()))
+    g.add( (criterionID, RDF.type, Literal("FAIR.criterion") ) )
+    g.add( (criterionName, RDF.type, Literal("FAIR.criterionTitle") ) )
     g.add( (criterionID, FAIR.hasTitle, criterionName) )
     g.add( (criterionName, FAIR.hasID, criterionID) )
     g.add( (rubricID, DC.hasPart, criterionID) )
     g.add( (criterionID, DC.isPartOf, rubricID) )
     #
-    codeName=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"code":line[13]})))
-    g.add( (codeName, RDF.type, FAIR.criterionCode) )
+    codeName=Literal(line[13])
+    g.add( (codeName, RDF.type, Literal("FAIR.criterionCode") ) )
     g.add( (criterionID, FAIR.hasCode, codeName) )
     #
-    otherID=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"criterionOtherID":line[14]})))
-    g.add( (otherID, RDF.type, FAIR.criterionOtherID) )
+    otherID=Literal(line[14])
+    g.add( (otherID, RDF.type, Literal("FAIR.criterionOtherID") ) )
     g.add( (criterionID, FAIR.hasOtherID, otherID) )
     #
-    measurementMethod=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"measurementMethod":line[15]})))
-    g.add( (measurementMethod, RDF.type, FAIR.criterionMeasurementMethod) )
+    measurementMethod=Literal(line[15])
+    g.add( (measurementMethod, RDF.type, Literal("FAIR.criterionMeasurementMethod") ) )
     g.add( (criterionID, FAIR.hasMeasurementMethod, measurementMethod) )
     #
-    resourceType=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"resourceType":line[16]})))
-    g.add( (resourceType, RDF.type, FAIR.criterionResourceType) )
+    resourceType=Literal(line[16])
+    g.add( (resourceType, RDF.type, Literal("FAIR.criterionResourceType") ) )
     g.add( (criterionID, FAIR.hasResourceType, resourceType) )
     #
     # xxx check for consistency
     mapped=EMPTY_STRING
     if line[17] == "1":
       mapped=0;
-    hasMapping=rdflib.term.URIRef(FAIRURL+(urllib.parse.urlencode({"hasMapping":line[17]})))
-    g.add( (hasMapping, RDF.type, FAIR.mappingdType) )
+    hasMapping=Literal(line[17])
+    g.add( (hasMapping, RDF.type, Literal("FAIR.mappingType") ) )
     g.add( (criterionID, FAIR.isMapped, hasMapping) )
     #
     #
@@ -197,76 +198,76 @@ with open(filename) as tsvfile:
       # F Aligned, no requirement mapping
       aligned = 1
     if line[19] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.F1Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.F1Requirement") ) )
       aligned = 1
     if line[20] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.F2Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.F2Requirement") ) )
       aligned = 1
     if line[21] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.F3Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.F3Requirement") ) )
       aligned = 1
     if line[22] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.F4Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.F4Requirement") ) )
       aligned = 1
     #
     if aligned == 1:
-      g.add( (criterionID, FAIR.isAlignedWith, FAIR.findablePrinciple) )
+      g.add( (criterionID, FAIR.isAlignedWith, Literal("FAIR.findablePrinciple") ) )
     #
     aligned=0
     if line[23] == "1":
       # A Aligned, no requirement mapping
       aligned = 1
     if line[24] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.A1Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.A1Requirement") ) )
       aligned = 1
     if line[25] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.A1_1Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.A1_1Requirement") ) )
       aligned = 1
     if line[26] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.A1_2Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.A1_2Requirement") ) )
       aligned = 1
     if line[27] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.A2Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.A2Requirement") ) )
       aligned = 1
      #
     if aligned == 1:
-      g.add( (criterionID, FAIR.isAlignedWith, FAIR.accessiblePrinciple) )
+      g.add( (criterionID, FAIR.isAlignedWith, Literal("FAIR.accessiblePrinciple") ) )
     #
     aligned=0
     if line[28] == "1":
       # I Aligned, no requirement mapping
       aligned = 1
     if line[29] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.I1Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.I1Requirement") ) )
       aligned = 1
     if line[30] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.I2Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.I2Requirement") ) )
       aligned = 1
     if line[31] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.I3Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.I3Requirement") ) )
       aligned = 1
     #
     if aligned == 1:
-      g.add( (criterionID, FAIR.isAlignedWith, FAIR.interoperablePrinciple) )
+      g.add( (criterionID, FAIR.isAlignedWith, Literal("FAIR.interoperablePrinciple") ) )
     #
     aligned=0
     if line[32] == "1":
       # R Aligned, no requirement mapping
       aligned = 1
     if line[33] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.R1Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.R1Requirement") ) )
       aligned = 1
     if line[34] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.R1_1Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.R1_1Requirement")) )
       aligned = 1
     if line[35] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.R1_2Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.R1_2Requirement") ) )
       aligned = 1
     if line[36] == "1":
-      g.add( (criterionID, FAIR.mapsToRequirement, FAIR.R1_3Requirement) )
+      g.add( (criterionID, FAIR.mapsToRequirement, Literal("FAIR.R1_3Requirement") ) )
       aligned = 1
     if aligned == 1:
-      g.add( (criterionID, FAIR.isAlignedWith, FAIR.reusablePrinciple) )
+      g.add( (criterionID, FAIR.isAlignedWith, Literal("FAIR.reusablePrinciple") ) )
     # xxx what about 'there is a comment'?
 
 
@@ -321,6 +322,6 @@ if 0:
 g.bind("dc", DC)
 g.bind("fair", FAIR)
 
-print(g.serialize(format='xml').decode('UTF-8'))
+#print(g.serialize(format='xml').decode('UTF-8'))
 #print(g.serialize(format='turtle'))
-#print( g.serialize(format='n3') )
+print( g.serialize(format='n3') )
