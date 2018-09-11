@@ -99,7 +99,7 @@ with open(filename) as tsvfile:
       # xxx check for consistency
       rubricID=rubrics[rubricName]
     else:
-      rubricID=Literal(str(uuid.uuid4()))
+      rubricID=rubricName # xxx this is more readable, but will it work?
       rubrics[rubricName]=rubricID
       g.add( (rubricID, RDF.type, Literal("FAIR.rubric") ) )
       g.add( (rubricName, RDF.type, Literal("FAIR.rubricTitle") ) )
@@ -156,7 +156,7 @@ with open(filename) as tsvfile:
       #
     # criteria
     criterionName=Literal(line[12])
-    criterionID=Literal(str(uuid.uuid4()))
+    criterionID=criterionName # xxx this is more readable, but will it work?
     g.add( (criterionID, RDF.type, Literal("FAIR.criterion") ) )
     g.add( (criterionName, RDF.type, Literal("FAIR.criterionTitle") ) )
     g.add( (criterionID, FAIR.hasTitle, criterionName) )
