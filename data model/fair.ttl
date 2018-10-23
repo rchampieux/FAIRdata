@@ -190,11 +190,7 @@ fair:alignsWith a owl:ObjectProperty ;
 fair:correspondingAuthor a owl:ObjectProperty ;
     rdfs:domain fair:Rubric ;
     rdfs:label "corresponding author" ;
-    rdfs:range [ a owl:Class ;
-                 owl:unionOf ( schema:Organization
-                               schema:Person
-                              ) ;
-                ] ;
+    rdfs:range schema:Person ;
     rdfs:subPropertyOf schema:author ;
 .
 ###  https://go-fair.org/schema/mapsTo 
