@@ -86,11 +86,11 @@ fair:hasCertificationMethod a owl:DatatypeProperty ;
     rdfs:label "has certification method" ;
     rdfs:range xsd:boolean ;
 .    
-###  https://go-fair.org/schema/hasDirectMapping
+###  https://go-fair.org/schema/hasNoDirectMapping
 ###  is this property necessary?  this seems queryable, ie FILTER NOT EXISTS { ?criterion fair:mapsTo ?principle }
 fair:hasNoDirectMapping a owl:DatatypeProperty ;
     rdfs:comment "The specific criteria does NOT map to any of the FAIR principles"@en ;
-    rdfs:domain fair:Rubric ;
+    rdfs:domain fair:Criterion ;
     rdfs:label "has no direct mapping" ;
     rdfs:range xsd:boolean ;
 .    
