@@ -1,0 +1,382 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fair: <https://go-fair.org/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://go-fair.org/schema/> .
+
+<https://go-fair.org/schema/> a owl:Ontology ;
+.
+
+#
+# Classes
+#
+###  https://go-fair.org/schema/Criterion
+fair:Criterion a owl:Class ;
+    dct:source <https://www.merriam-webster.com/dictionary/criterion> ;
+    rdfs:comment "A standard on which a judgment or decision may be based."@en ;
+    rdfs:label "Criterion"@en ;
+    rdfs:subClassOf schema:Intangible ;
+.
+###  https://go-fair.org/schema/Principle
+fair:Principle a owl:Class ;
+    dct:source <https://www.merriam-webster.com/dictionary/principle> ;
+    rdfs:comment "A rule or code of conduct."@en ;
+    rdfs:label "Principle"@en ;
+    rdfs:subClassOf schema:Intangible ;
+.
+###  https://go-fair.org/schema/Requirement
+fair:Requirement a owl:Class ;
+    dct:source <https://www.merriam-webster.com/dictionary/requirement> ;
+    rdfs:comment "Something wanted or needed."@en ;
+    rdfs:label "Requirement"@en ;
+    rdfs:subClassOf schema:Intangible ;
+.
+###  https://go-fair.org/schema/Rubric
+fair:Rubric a owl:Class ;
+    dct:source <https://www.merriam-webster.com/dictionary/rubric> ;
+    rdfs:comment "a guide listing specific criteria for grading or scoring academic papers, projects, or tests"@en ;
+    rdfs:label "Rubric"@en ;
+    rdfs:subClassOf schema:CreativeWork ;
+.    
+###  https://schema.org/CreativeWork
+schema:CreativeWork a owl:Class ;
+    rdfs:comment "The most generic kind of creative work, including books, movies, photographs, software programs, etc."@en ;
+    rdfs:isDefinedBy <https://schema.org/CreativeWork> ;
+    rdfs:label "CreativeWork"@en ;
+.
+###  https://schema.org/Intangible
+schema:Intangible a owl:Class ;
+    rdfs:comment "A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc."@en ;
+    rdfs:isDefinedBy <https://schema.org/Intangible> ;
+    rdfs:label "Intangible"@en ;
+.
+###  https://schema.org/Organization
+schema:Organization a owl:Class ;
+    rdfs:comment "An organization such as a school, NGO, corporation, club, etc."@en ;
+    rdfs:isDefinedBy <https://schema.org/Organization> ;
+    rdfs:label "Organization"@en .
+.
+###  https://schema.org/Person
+schema:Person a owl:Class ;
+    rdfs:comment "A person (alive, dead, undead, or fictional)."@en ;
+    rdfs:isDefinedBy <https://schema.org/Person> ;
+    rdfs:label "Person"@en ;
+    owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> ;
+.
+
+
+#
+# Datatype Properties
+#
+###  https://go-fair.org/schema/communityFocus
+fair:communityFocus a owl:DatatypeProperty ;
+    rdfs:comment "Which communities should use this rubric? Value should be 'All', 'Biomedical', or 'Other'."@en ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "community focus" ;
+    rdfs:range xsd:string ;
+.    
+###  https://go-fair.org/schema/hasCertificationMethod
+fair:hasCertificationMethod a owl:DatatypeProperty ;
+    rdfs:comment "Does the rubric give certifications to resources?"@en ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "has certification method" ;
+    rdfs:range xsd:boolean ;
+.    
+###  https://go-fair.org/schema/hasDirectMapping
+###  is this property necessary?  this seems queryable, ie FILTER NOT EXISTS { ?criterion fair:mapsTo ?principle }
+fair:hasNoDirectMapping a owl:DatatypeProperty ;
+    rdfs:comment "The specific criteria does NOT map to any of the FAIR principles"@en ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "has no direct mapping" ;
+    rdfs:range xsd:boolean ;
+.    
+###  https://go-fair.org/schema/hasImplementationEvidence
+fair:hasImplementationEvidence a owl:DatatypeProperty ;
+    rdfs:comment "Is the rubric being used by the community?"@en ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "has implementation evidence" ;
+    rdfs:range xsd:boolean ;
+.    
+###  https://go-fair.org/schema/hasScoringMethod
+fair:hasScoringMethod a owl:DatatypeProperty ;
+    rdfs:comment "Does the rubric give scores to resources?"@en ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "has scoring method" ;
+    rdfs:range xsd:boolean ;
+.    
+###  https://go-fair.org/schema/licenseType 
+fair:licenceType a owl:DatatypeProperty ;
+    rdfs:comment "The type of license the rubric has. Value should be 'Copyright', 'Permissive', or 'Unknown'."@en ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "license type"@en ;
+    rdfs:range xsd:string ;
+.
+###  https://go-fair.org/schema/measurementMethod 
+fair:measurementMethod a owl:DatatypeProperty ;
+    rdfs:comment "How is the specific criteria measured by the evaluators? Value should be 'Qualitative Review', 'Present or Absent', 'Computable Action', or 'Combination'."@en ;
+    rdfs:domain fair:Criterion ;
+    rdfs:label "measurement method"@en ;
+    rdfs:range xsd:string ;
+.
+###  https://go-fair.org/schema/researchResourceType 
+fair:researchResourceType a owl:DatatypeProperty ;
+    rdfs:comment "What type of research resource does the criteria apply to? Value should be 'Data Repository', 'Data Set', 'All Resources', or 'Other'."@en ;
+    rdfs:domain fair:Criterion ;
+    rdfs:label "research resource type"@en ;
+    rdfs:range xsd:string ;
+.
+###  https://go-fair.org/schema/scoringOutput 
+fair:scoringOutput a owl:DatatypeProperty ;
+    rdfs:comment "What kind of score does the rubric give? Value should be 'Numerical', 'Adjectival', 'Color Coded', or 'Combination'."@en ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "scoring output"@en ;
+    rdfs:range xsd:string ;
+.
+###  https://schema.org/identifier
+schema:identifier a owl:DatatypeProperty ;
+    rdfs:comment "The identifier property represents any kind of identifier for any kind of <a href=\"http://schema.org/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details."@en ;
+    rdfs:isDefinedBy <https://schema.org/identifier> ;
+    rdfs:label "identifier"@en ;
+    rdfs:range xsd:string ;
+.
+###  https://schema.org/license
+schema:license a owl:ObjectProperty ;
+    rdfs:comment "A license document that applies to this content, typically indicated by URL."@en ;
+    rdfs:domain schema:CreativeWork ;
+    rdfs:isDefinedBy <https://schema.org/license> ;
+    rdfs:label "license"@en ;
+    rdfs:range xsd:string ;
+.
+###  http://schema.org/name
+schema:name a owl:DatatypeProperty ;
+    rdfs:comment "The name of the item."@en ;
+    rdfs:isDefinedBy <https://schema.org/name> ;
+    rdfs:label "name"@en 
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf rdfs:label ;
+.
+###  https://schema.org/url
+schema:url a owl:ObjectProperty ;
+    rdfs:comment "URL of the item."@en ;
+    rdfs:isDefinedBy <https://schema.org/url> ;
+    rdfs:label "url"@en ;
+    rdfs:range xsd:anyURI ;
+.
+###  https://schema.org/version
+schema:version rdf:type owl:ObjectProperty ;
+    rdfs:comment "The version of the CreativeWork embodied by a specified resource."@en ;
+    rdfs:domain schema:CreativeWork ;
+    rdfs:isDefinedBy <https://schema.org/version> ;
+    rdfs:label "version"@en ;
+    rdfs:range xsd:string ;
+.
+
+
+#
+# Object Properties
+#
+###  https://go-fair.org/schema/alignsWith
+fair:alignsWith a owl:ObjectProperty ;
+    rdfs:comment "The FAIR principle a rubric's criterion aligns with."@en ;
+    rdfs:domain fair:Criterion ;
+    rdfs:label "aligns with"@en ;
+    rdfs:range fair:Principle ;
+.
+###  https://go-fair.org/schema/correspondingAuthor 
+fair:correspondingAuthor a owl:ObjectProperty ;
+    rdfs:domain fair:Rubric ;
+    rdfs:label "corresponding author" ;
+    rdfs:range [ a owl:Class ;
+                 owl:unionOf ( schema:Organization
+                               schema:Person
+                              ) ;
+    rdfs:subPropertyOf schema:author ;
+.
+###  https://go-fair.org/schema/mapsTo 
+fair:mapsTo a owl:ObjectProperty ;
+    rdfs:comment "The FAIR requirement a rubric's criterion directly maps to."@en ;
+    rdfs:domain fair:Criterion ;
+    rdfs:label "maps to"@en ;
+    rdfs:range fair:Requirement ;
+.
+###  https://schema.org/author
+schema:author a owl:ObjectProperty ;
+    rdfs:comment "The author of this content."@en ;
+    rdfs:domain schema:CreativeWork ;
+    rdfs:isDefinedBy <https://schema.org/author> ;
+    rdfs:label "author"@en ;
+    rdfs:range [ a owl:Class ;
+                owl:unionOf ( schema:Organization
+                              schema:Person
+                            ) ;
+.
+###  http://schema.org/hasPart
+schema:hasPart a owl:ObjectProperty ;
+    owl:inverseOf schema:isPartOf ;
+    rdfs:comment "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense)."@en ;
+    rdfs:domain schema:CreativeWork ;
+    rdfs:isDefinedBy <https://schema.org/hasPart> ;
+    rdfs:label "hasPart"@en ;
+    rdfs:range schema:CreativeWork ;
+.
+###  http://schema.org/isPartOf
+schema:isPartOf a owl:ObjectProperty ;
+    rdfs:comment "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of."@en ;
+    rdfs:domain schema:CreativeWork ;
+    rdfs:isDefinedBy <https://schema.org/isPartOf> ;
+    rdfs:label "isPartOf"@en ;
+    rdfs:range schema:CreativeWork ;
+.
+
+
+#
+# Named Indivduals
+#
+###  https://go-fair.org/schema/Accesible
+fair:Accessible a fair:Principle ;
+    dct:source <https://www.go-fair.org/fair-principles/> ;
+    rdfs:comment "Once the user finds the required data, she/he needs to know how can they be accessed, possibly including authentication and authorisation."@en ;
+    rdfs:label "Accessible"@en ;
+    schema:hasPart fair:A1 ;
+    schema:hasPart fair:A1.1 ;
+    schema:hasPart fair:A1.2 ;
+    schema:hasPart fair:A2 ;
+.
+###  https://go-fair.org/schema/A1
+fair:A1 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data are retrievable by their identifier using a standardized communications protocol."@en ;
+    rdfs:label "A1" ;
+    schema:isPartOf fair:Accessible ;
+.    
+###  https://go-fair.org/schema/A1.1
+fair:A1.1 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "the protocol is open, free, and universally implementable."@en ;
+    rdfs:label "A1.1" ;
+    schema:isPartOf fair:Accessible ;
+.    
+###  https://go-fair.org/schema/A1.2
+fair:A1.2 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "the protocol allows for an authentication and authorization procedure, where necessary."@en ;
+    rdfs:label "A1.2" ;
+    schema:isPartOf fair:Accessible ;
+.    
+###  https://go-fair.org/schema/A2
+fair:A2 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "metadata are accessible, even when the data are no longer available."@en ;
+    rdfs:label "A2" ;
+    schema:isPartOf fair:Accessible ;
+.    
+###  https://go-fair.org/schema/Findable
+fair:Findable a fair:Principle ;
+    dct:source <https://www.go-fair.org/fair-principles/> ;
+    rdfs:comment "The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the FAIRification process."@en ;
+    rdfs:label "Findable"@en ;
+    schema:hasPart fair:F1 ;
+    schema:hasPart fair:F2 ;
+    schema:hasPart fair:F3 ;
+    schema:hasPart fair:F4 ;
+.
+###  https://go-fair.org/schema/F1
+fair:F1 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data are assigned a globally unique and eternally persistent identifier."@en ;
+    rdfs:label "F1" ;
+    schema:isPartOf fair:Findable ;
+.
+###  https://go-fair.org/schema/F2
+fair:F2 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "data are described with rich metadata."@en ;
+    rdfs:label "F2" ;
+    schema:isPartOf fair:Findable ;
+.
+###  https://go-fair.org/schema/F3
+fair:F3 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data are registered or indexed in a searchable resource."@en ;
+    rdfs:label "F3" ;
+    schema:isPartOf fair:Findable ;
+.
+###  https://go-fair.org/schema/F4
+fair:F4 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "metadata specify the data identifier."@en ;
+    rdfs:label "F4" ;
+    schema:isPartOf fair:Findable ;
+.
+###  https://go-fair.org/schema/Interoperable 
+fair:Interoperable a fair:Principle ;
+    dct:source <https://www.go-fair.org/fair-principles/> ;
+    rdfs:comment "The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing."@en ;
+    rdfs:label "Interoperable"@en ;
+    schema:hasPart fair:I1 ;
+    schema:hasPart fair:I2 ;
+    schema:hasPart fair:I3 ;
+.
+###  https://go-fair.org/schema/I1
+fair:I1 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation."@en ;
+    rdfs:label "I1" ;
+    schema:isPartOf fair:Interoperable ;
+.
+###  https://go-fair.org/schema/I2
+fair:I2 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data use vocabularies that follow FAIR principles."@en ;
+    rdfs:label "I2" ;
+    schema:isPartOf fair:Interoperable ;
+.
+###  https://go-fair.org/schema/I3
+fair:I3 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data include qualified references to other (meta)data."@en ;
+    rdfs:label "I3" ;
+    schema:isPartOf fair:Interoperable ;
+.
+###  https://go-fair.org/schema/Reusable
+fair:Reusable a fair:Principle ;
+    dct:source <https://www.go-fair.org/fair-principles/> ;
+    rdfs:comment "The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings."@en ;
+    rdfs:label "Reusable"@en ;
+    schema:hasPart fair:R1 ;
+    schema:hasPart fair:R1.1 ;
+    schema:hasPart fair:R1.2 ;
+    schema:hasPart fair:R1.3 ;
+.
+###  https://go-fair.org/schema/R1
+fair:R1 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data have a plurality of accurate and relevant attributes."@en ;
+    rdfs:label "R1" ;
+    schema:isPartOf fair:Reusable ;
+.
+###  https://go-fair.org/schema/R1.1
+fair:R1.1 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data are released with a clear and accessible data usage license."@en ;
+    rdfs:label "R1.1" ;
+    schema:isPartOf fair:Reusable ;
+.
+###  https://go-fair.org/schema/R1.2
+fair:R1.2 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data are associated with their provenance."@en ;
+    rdfs:label "R1.2" ;
+    schema:isPartOf fair:Reusable ;
+.
+###  https://go-fair.org/schema/R1.3
+fair:R1.3 a fair:Requirement ;
+    dct:source <https://www.force11.org/group/fairgroup/fairprinciples> ;
+    rdfs:comment "(meta)data meet domain-relevant community standards."@en ;
+    rdfs:label "R1.3" ;
+    schema:isPartOf fair:Reusable ;
+.
