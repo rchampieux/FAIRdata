@@ -1,0 +1,53 @@
+@prefix fair: <https://go-fair.org/schema/> .
+@prefix eval: <https://go-fair.org/data/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://go-fair.org/data/> .
+
+eval:fair-metrics a fair:Rubric ;
+    fair:communityFocus "All" ;
+    fair:hasCertificationMethod 0 ;
+    fair:hasImplementationEvidence 1 ;
+    fair:hasScoringMethod 1 ;
+    fair:scoringOutput "Color Coded" ;
+    fair:licenseType "Permissive" ;
+    schema:author eval:mark-wilkinson ;
+    schema:author eval:susanna-sansone ;
+    schema:author eval:michel-dumontier ;
+    schema:author eval:peter-doorn ;
+    schema:author eval:luiz-olavo-bonino ;
+    schema:author eval:erik-schultes ;
+    schema:license "CC-BY-4.0" ;
+    schema:name "FAIR Metrics" ;
+    schema:version "V1.0.3" ;
+    schema:url <https://zenodo.org/record/1305060#.Wz_JAJMbOqA> ;
+.
+    
+eval:mark-wilkinson a schema:Person ;
+    schema:name "Mark Wilkinson" ;
+.    
+eval:susanna-sansone a schema:Person ;
+    schema:name "Susanna Sansone" ;
+.
+eval:michel-dumontier a schema:Person ;
+    schema:name "Michel Dumontier" ;
+.
+eval:peter-doorn a schema:Person ;
+    schema:name "Peter Doorn" ;
+.
+eval:luiz-olavo-bonino a schema:Person ;
+    schema:name "Luiz Olavo Bonino" ;
+.
+eval:erik-schultes a schema:Person ;
+    schema:name "Erik Schultes" ;
+.
+
+eval:identifier-uniqueness a fair:Criterion ;
+    fair:mapsTo fair:F1 ;
+    fair:hasNoDirectMapping 0 ;
+    fair:measurementMethod "Present or Absent" ;
+    fair:researchResourceType "All Resources" ;
+    schema:identifier "FM-F1A" ;
+    schema:name "Identifier Unqiqueness" ;
+    schema:url <https://purl.org/fair-metrics/FM_F1A> ;
+    
