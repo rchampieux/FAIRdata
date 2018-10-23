@@ -58,7 +58,7 @@ schema:Intangible a owl:Class ;
 schema:Organization a owl:Class ;
     rdfs:comment "An organization such as a school, NGO, corporation, club, etc."@en ;
     rdfs:isDefinedBy <https://schema.org/Organization> ;
-    rdfs:label "Organization"@en .
+    rdfs:label "Organization"@en ;
 .
 ###  https://schema.org/Person
 schema:Person a owl:Class ;
@@ -155,7 +155,7 @@ schema:license a owl:ObjectProperty ;
 schema:name a owl:DatatypeProperty ;
     rdfs:comment "The name of the item."@en ;
     rdfs:isDefinedBy <https://schema.org/name> ;
-    rdfs:label "name"@en 
+    rdfs:label "name"@en ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf rdfs:label ;
 .
@@ -194,6 +194,7 @@ fair:correspondingAuthor a owl:ObjectProperty ;
                  owl:unionOf ( schema:Organization
                                schema:Person
                               ) ;
+                ] ;
     rdfs:subPropertyOf schema:author ;
 .
 ###  https://go-fair.org/schema/mapsTo 
@@ -213,6 +214,7 @@ schema:author a owl:ObjectProperty ;
                 owl:unionOf ( schema:Organization
                               schema:Person
                             ) ;
+                ] ;
 .
 ###  http://schema.org/hasPart
 schema:hasPart a owl:ObjectProperty ;
