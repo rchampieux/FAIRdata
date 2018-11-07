@@ -183,6 +183,8 @@ with open(filename) as tsvfile:
       print("    fair:measurementMethod \""+line[15]+"\" ;");
     if(line[16] != ""):
       print("    fair:researchResourceType \""+line[16]+"\" ;");
+    if(line[16] != ""):
+      print("    schema:isPartOf eval:\""+rubric+"\" ;");
     if(line[13] != ""):
       print("    schema:identifier \""+line[13]+"\" ;");
     if(line[12] != ""):
