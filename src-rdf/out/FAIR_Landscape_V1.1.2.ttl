@@ -47,7 +47,7 @@ eval:identifier-uniqueness a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-F1A" ;
     schema:name "Identifier Uniqueness" ;
     schema:url <https://purl.org/fair-metrics/FM_F1A> ;
@@ -58,7 +58,7 @@ eval:identifier-persistence a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-F1B" ;
     schema:name "Identifier Persistence" ;
     schema:url <https://purl.org/fair-metrics/FM_F1B> ;
@@ -69,7 +69,7 @@ eval:machine-readability-of-metadata a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-F2" ;
     schema:name "Machine-readability of metadata" ;
     schema:url <https://purl.org/fair-metrics/FM_F2> ;
@@ -80,7 +80,7 @@ eval:resource-identifier-in-metadata a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-F3" ;
     schema:name "Resource Identifier in Metadata" ;
     schema:url <https://purl.org/fair-metrics/FM_F1B> ;
@@ -91,7 +91,7 @@ eval:indexed-in-a-searchable-resource a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Computable Action (e.g. HTTP get)" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-F4" ;
     schema:name "Indexed in a searchable resource" ;
     schema:url <https://purl.org/fair-metrics/FM_F4> ;
@@ -102,7 +102,7 @@ eval:access-protocol a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Combination" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-A1.1" ;
     schema:name "Access Protocol" ;
     schema:url <https://purl.org/fair-metrics/FM_A1.1> ;
@@ -113,7 +113,7 @@ eval:access-authorization a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Combination" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-A1.2" ;
     schema:name "Access Authorization" ;
     schema:url <https://purl.org/fair-metrics/FM_A1.2> ;
@@ -124,7 +124,7 @@ eval:metadata-longevity a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Combination" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-A2" ;
     schema:name "Metadata Longevity" ;
     schema:url <https://purl.org/fair-metrics/FM_A2> ;
@@ -135,7 +135,7 @@ eval:use-a-knowledge-representation-language a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Combination" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-I1" ;
     schema:name "Use a Knowledge Representation Language" ;
     schema:url <https://purl.org/fair-metrics/FM_I1> ;
@@ -146,7 +146,7 @@ eval:use-fair-vocabularies a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Combination" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-I2" ;
     schema:name "Use FAIR Vocabularies" ;
     schema:url <https://purl.org/fair-metrics/FM_I2> ;
@@ -157,7 +157,7 @@ eval:use-qualifed-references a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Combination" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-I3" ;
     schema:name "Use Qualifed References" ;
     schema:url <https://purl.org/fair-metrics/FM_I3> ;
@@ -168,7 +168,7 @@ eval:accessible-usage-license a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-R1.1" ;
     schema:name "Accessible Usage License" ;
     schema:url <https://purl.org/fair-metrics/FM_R1.1> ;
@@ -179,7 +179,7 @@ eval:detailed-provenance a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Combination" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-R1.2" ;
     schema:name "Detailed Provenance" ;
     schema:url <https://purl.org/fair-metrics/FM_R1.2> ;
@@ -190,7 +190,7 @@ eval:meets-community-standards a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-metrics" ;
+    schema:isPartOf eval:fair-metrics ;
     schema:identifier "FM-R1.3" ;
     schema:name "Meets Community Standards" ;
     schema:url <https://purl.org/fair-metrics/FM_R1.3> ;
@@ -236,7 +236,7 @@ eval:does-the-resource-have-a-single-license a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "A.1" ;
     schema:name "Does the resource have a single license?" ;
 .
@@ -246,7 +246,7 @@ eval:does-the-resource-use-a-standard-license a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "A.2" ;
     schema:name "Does the resource use a standard license?" ;
 .
@@ -256,7 +256,7 @@ eval:does-the-license-clearly-define-the-terms-of-continuing-reuse-free-of-any-l
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "B.1" ;
     schema:name "Does the license clearly define the terms of continuing reuse free of any language that would require human or legal action or negotiation?" ;
 .
@@ -266,7 +266,7 @@ eval:is-the-scoping-of-the-license-complete- a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "B.2" ;
     schema:name "Is the scoping of the license complete? " ;
 .
@@ -276,7 +276,7 @@ eval:does-the-resource-provide-a-reasonable-good-faith-location-to-access-all-da
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "C.1" ;
     schema:name "Does the resource provide a \"reasonable good-faith location\" to access all data groupings with a single \"action\"?" ;
 .
@@ -286,7 +286,7 @@ eval:does-the-resource-provide-a-reasonable-and-transparent-method-of-obtaining-
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "C.2" ;
     schema:name "Does the resource provide a \"reasonable and transparent\" method of obtaining data?" ;
 .
@@ -295,7 +295,7 @@ eval:are-different-types-of-downstream-reuse-distinguished-as-allowable-or-as-fo
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "D.1" ;
     schema:name "Are different types of downstream reuse distinguished as allowable or as forbidden?" ;
 .
@@ -304,7 +304,7 @@ eval:are-different-types-of-person-groups-or-agents-distinguished a fair:Criteri
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"reusable-data-project" ;
+    schema:isPartOf eval:reusable-data-project ;
     schema:identifier "E.1" ;
     schema:name "Are different types of person groups or \"agents\" distinguished?" ;
 .
@@ -330,7 +330,7 @@ eval:the-repository-has-an-explicit-mission-to-provide-access-to-and-preserve-da
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R1" ;
     schema:name "The repository has an explicit mission to provide access to and preserve data in its domain" ;
 .
@@ -340,7 +340,7 @@ eval:the-repository-maintains-all-applicable-licenses-covering-data-access-and-u
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R2" ;
     schema:name "The repository maintains all applicable licenses covering data access and use and monitors compliance." ;
 .
@@ -350,7 +350,7 @@ eval:the-repository-has-a-continuity-plan-to-ensure-ongoing-access-to-and-preser
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R3" ;
     schema:name "The repository has a continuity plan to ensure ongoing access to and preservation of its holdings." ;
 .
@@ -360,7 +360,7 @@ eval:the-repository-ensures-to-the-extent-possible-that-data-are-created-curated
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R4" ;
     schema:name "The repository ensures, to the extent possible, that data are created, curated, accessed, and used in compliance with disciplinary and ethical norms." ;
 .
@@ -369,7 +369,7 @@ eval:the-repository-has-adequate-funding-and-sufficient-numbers-of-qualified-sta
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R5" ;
     schema:name "The repository has adequate funding and sufficient numbers of qualified staff managed through a clear system of governance to effectively carry out the mission." ;
 .
@@ -377,7 +377,7 @@ eval:the-repository-adopts-mechanisms-to-secure-ongoing-expert-guidance-and-feed
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R6" ;
     schema:name "The repository adopts mechanism(s) to secure ongoing expert guidance and feedback (either inhouse, or external, including scientific guidance, if relevant)." ;
 .
@@ -389,7 +389,7 @@ eval:the-repository-guarantees-the-integrity-and-authenticity-of-the-data a fair
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R7" ;
     schema:name "The repository guarantees the integrity and authenticity of the data." ;
 .
@@ -399,7 +399,7 @@ eval:the-repository-accepts-data-and-metadata-based-on-defined-criteria-to-ensur
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R8" ;
     schema:name "The repository accepts data and metadata based on defined criteria to ensure relevance and understandability for data users." ;
 .
@@ -408,7 +408,7 @@ eval:the-repository-applies-documented-processes-and-procedures-in-managing-arch
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R9" ;
     schema:name "The repository applies documented processes and procedures in managing archival storage of the data." ;
 .
@@ -418,7 +418,7 @@ eval:the-repository-assumes-responsibility-for-long-term-preservation-and-manage
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R10" ;
     schema:name "The repository assumes responsibility for long-term preservation and manages this function in a planned and documented way." ;
 .
@@ -430,7 +430,7 @@ eval:the-repository-has-appropriate-expertise-to-address-technical-data-and-meta
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R11" ;
     schema:name "The repository has appropriate expertise to address technical data and metadata quality and ensures that sufficient information is available for end users to make quality-related evaluations." ;
 .
@@ -438,7 +438,7 @@ eval:archiving-takes-place-according-to-defined-workflows-from-ingest-to-dissemi
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R12" ;
     schema:name "Archiving takes place according to defined workflows from ingest to dissemination." ;
 .
@@ -451,7 +451,7 @@ eval:the-repository-enables-users-to-discover-the-data-and-refer-to-them-in-a-pe
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R13" ;
     schema:name "The repository enables users to discover the data and refer to them in a persistent way through proper citation." ;
 .
@@ -464,7 +464,7 @@ eval:the-repository-enables-reuse-of-the-data-over-time-ensuring-that-appropriat
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R14" ;
     schema:name "The repository enables reuse of the data over time, ensuring that appropriate metadata are available to support the understanding and use of the data." ;
 .
@@ -473,7 +473,7 @@ eval:the-repository-functions-on-well-supported-operating-systems-and-other-core
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R15" ;
     schema:name "The repository functions on well-supported operating systems and other core infrastructural software and is using hardware and software technologies appropriate to the services it provides to its Designated Community." ;
 .
@@ -481,7 +481,7 @@ eval:the-technical-infrastructure-of-the-repository-provides-for-protection-of-t
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"core-trust-seal" ;
+    schema:isPartOf eval:core-trust-seal ;
     schema:identifier "R16" ;
     schema:name "The technical infrastructure of the repository provides for protection of the facility and its data, products, services, and users." ;
 .
@@ -516,7 +516,7 @@ eval:does-the-dataset-have-a-pid-persistent-identifier a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "F1a" ;
     schema:name "Does the dataset have a PID (persistent identifier)?" ;
 .
@@ -526,7 +526,7 @@ eval:is-there-sufficient-metadata-available a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "F1b" ;
     schema:name "Is there sufficient metadata available?" ;
 .
@@ -536,7 +536,7 @@ eval:is-there-extensive-metadata-and-rich-additional-documentation-available a f
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "F5a" ;
     schema:name "Is there extensive metadata and rich additional documentation available?" ;
 .
@@ -546,7 +546,7 @@ eval:does-the-dataset-have-a-user-license a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "A1a" ;
     schema:name "Does the dataset have a user license?" ;
 .
@@ -556,7 +556,7 @@ eval:are-the-metadata-accessible a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "A1b" ;
     schema:name "Are the metadata accessible" ;
 .
@@ -566,7 +566,7 @@ eval:does-the-user-license-have-any-user-restrictions-for-accessing-the-data a f
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "A2b" ;
     schema:name "Does the user license have any user restrictions for accessing the data?" ;
 .
@@ -575,7 +575,7 @@ eval:is-the-dataset-available-for-public-access-ie-the-restriction-is-only-regis
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "A4a" ;
     schema:name "Is the dataset available for public access? (i.e. the restriction is only registration on a website before the person has access the data)" ;
 .
@@ -584,7 +584,7 @@ eval:is-the-dataset-completely-open-access-with-no-restrictions a fair:Criterion
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "A5a" ;
     schema:name "Is the dataset completely open access with no restrictions?" ;
 .
@@ -594,7 +594,7 @@ eval:is-the-data-file-in-a-proprietary-format a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "I1a" ;
     schema:name "Is the data file in a proprietary format?" ;
 .
@@ -602,7 +602,7 @@ eval:is-the-dataset-multi-file a fair:Criterion ;
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:name "Is the dataset multi-file?" ;
 .
 eval:are-all-of-the-data-files-in-a-proprietary-format a fair:Criterion ;
@@ -611,7 +611,7 @@ eval:are-all-of-the-data-files-in-a-proprietary-format a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "I1a" ;
     schema:name "Are all of the data files in a proprietary format?" ;
 .
@@ -621,7 +621,7 @@ eval:please-indicate-which-of-these-statements-is-the-most-applicable-to-the-dat
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "I2a" ;
     schema:name "Please indicate which of these statements is the most applicable to the dataset:  most, half, few, or none" ;
 .
@@ -631,7 +631,7 @@ eval:is-the-format-therefore-consistent-with-a-preferred-archival-format a fair:
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "I3a" ;
     schema:name "Is the format therefore consistent with a 'preferred' archival format?" ;
 .
@@ -643,7 +643,7 @@ eval:is-a-standardised-vocabulary-coding-scheme-or-markup_tagging-schema-used-in
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "I4b" ;
     schema:name "Is a standardised vocabulary, coding scheme or markup/tagging schema used in order to harmonise the information in the dataset?" ;
 .
@@ -653,7 +653,7 @@ eval:is-the-data-represented-as-linked-data-eg-in-rdf-format-so-that-it-can-be-l
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairdat" ;
+    schema:isPartOf eval:fairdat ;
     schema:identifier "I5a" ;
     schema:name "Is the data represented as linked data (e.g. in RDF format), so that it can be linked to other data?" ;
 .
@@ -708,7 +708,7 @@ eval:meta-data-are-assigned-globally-unique-and-persistent-identifiers a fair:Cr
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "F1" ;
     schema:name "(meta) data are assigned globally unique and persistent identifiers" ;
 .
@@ -718,7 +718,7 @@ eval:data-are-described-with-rich-metadata a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "F2" ;
     schema:name "Data are described with rich metadata" ;
 .
@@ -728,7 +728,7 @@ eval:metadata-clearly-and-explicitly-include-the-identifier-of-the-data-it-descr
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "F3" ;
     schema:name "Metadata clearly and explicitly include the identifier of the data it describes" ;
 .
@@ -738,7 +738,7 @@ eval:metadata-are-registered-or-indexed-in-a-searchable-resource a fair:Criterio
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "F4" ;
     schema:name "(meta)data are registered or indexed in a searchable resource" ;
 .
@@ -748,7 +748,7 @@ eval:metadata-are-retrievable-by-their-identifier-using-a-standardised-communica
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "A1" ;
     schema:name "(meta)data are retrievable by their identifier using a standardised communication protocol" ;
 .
@@ -758,7 +758,7 @@ eval:the-protocol-is-open-free-and-universally-implementable a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "A1.1" ;
     schema:name "The protocol is open, free and universally implementable" ;
 .
@@ -768,7 +768,7 @@ eval:the-protocol-allows-for-an-authentication-and-authorisation-when-required a
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "A1.2" ;
     schema:name "The protocol allows for an authentication and authorisation when required" ;
 .
@@ -778,7 +778,7 @@ eval:metadata-should-be-accessible-even-when-the-data-is-no-longer-available a f
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "A2" ;
     schema:name "Metadata should be accessible even when the data is no longer available" ;
 .
@@ -788,7 +788,7 @@ eval:metadata-use-a-formal-accessible-shared-and-broadly-applicable-language-for
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "I1" ;
     schema:name "(meta)data use a formal, accessible, shared and broadly applicable language for knowledge representation" ;
 .
@@ -798,7 +798,7 @@ eval:metadata-use-vocabularies-that-follow-the-fair-principles a fair:Criterion 
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "I2" ;
     schema:name "(meta)data use vocabularies that follow the FAIR principles" ;
 .
@@ -808,7 +808,7 @@ eval:metadata-include-qualified-references-to-other-metadata a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "I3" ;
     schema:name "(meta)data include qualified references to other (meta)data" ;
 .
@@ -818,7 +818,7 @@ eval:metadata-are-richly-described-with-a-plurality-of-accurate-and-relevant-att
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "R1" ;
     schema:name "meta(data) are richly described with a plurality of accurate and relevant attributes" ;
 .
@@ -828,7 +828,7 @@ eval:metadata-are-released-with-a-clear-and-accessible-data-usage-license a fair
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "R1.1" ;
     schema:name "(meta)data are released with a clear and accessible data usage license" ;
 .
@@ -838,7 +838,7 @@ eval:metadata-are-associated-with-detailed-provenance a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "R1.2" ;
     schema:name "(meta)data are associated with detailed provenance" ;
 .
@@ -848,7 +848,7 @@ eval:metadata-meet-domain-relevant-community-standards a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-data-principles-explained" ;
+    schema:isPartOf eval:fair-data-principles-explained ;
     schema:identifier "R1.3" ;
     schema:name "(meta)data meet domain-relevant community standards" ;
 .
@@ -874,7 +874,7 @@ eval:the-tool-has-a-unique-name-and-an-informative-description a fair:Criterion 
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "1" ;
     schema:name "The tool has a unique name and an informative description." ;
 .
@@ -883,7 +883,7 @@ eval:the-tool-can-be-freely-downloaded-or-accessed-from-a-webpage a fair:Criteri
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "2" ;
     schema:name "The tool can be freely downloaded or accessed from a webpage." ;
 .
@@ -891,7 +891,7 @@ eval:a-paper-about-the-tool-has-been-published a fair:Criterion ;
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "3" ;
     schema:name "A paper about the tool has been published." ;
 .
@@ -900,7 +900,7 @@ eval:tutorials-for-the-tool-are-available-on-the-tools-homepage a fair:Criterion
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "4" ;
     schema:name "Tutorials for the tool are available on the tool's homepage." ;
 .
@@ -909,7 +909,7 @@ eval:source-code-is-shared-in-a-public-repository-and-is-documented a fair:Crite
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "5" ;
     schema:name "Source code is shared in a public repository and is documented." ;
 .
@@ -918,7 +918,7 @@ eval:previous-versions-of-the-tool-are-made-available a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "6" ;
     schema:name "Previous versions of the tool are made available." ;
 .
@@ -928,7 +928,7 @@ eval:contact-information-is-provided-for-the-creators-of-the-tool a fair:Criteri
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "7" ;
     schema:name "Contact information is provided for the creator(s) of the tool." ;
 .
@@ -937,7 +937,7 @@ eval:information-is-provided-describing-how-to-cite-the-tool a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "8" ;
     schema:name "Information is provided describing how to cite the tool." ;
 .
@@ -947,7 +947,7 @@ eval:licensing-information-is-provided-on-the-tools-homepage a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Tool" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "9" ;
     schema:name "Licensing information is provided on the tool's homepage." ;
 .
@@ -956,7 +956,7 @@ eval:the-structure-of-the-repository-permits-efficient-discovery-of-data-and-met
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "1" ;
     schema:name "The structure of the repository permits efficient discovery of data and metadata by end users." ;
 .
@@ -966,7 +966,7 @@ eval:the-repository-uses-a-standardized-protocol-to-permit-access-by-users a fai
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "2" ;
     schema:name "The repository uses a standardized protocol to permit access by users." ;
 .
@@ -976,7 +976,7 @@ eval:the-repository-provides-contact-information-for-staff-to-enable-users-with-
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "3" ;
     schema:name "The repository provides contact information for staff to enable users with questions or suggestions to interact with repository experts." ;
 .
@@ -986,7 +986,7 @@ eval:tools-that-can-be-used-to-analyze-each-dataset-are-listed-on-the-correspond
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "4" ;
     schema:name "Tools that can be used to analyze each dataset are listed on the corresponding dataset pages." ;
 .
@@ -996,7 +996,7 @@ eval:the-repository-maintains-licenses-to-manage-data-access-and-use a fair:Crit
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "5" ;
     schema:name "The repository maintains licenses to manage data access and use." ;
 .
@@ -1008,7 +1008,7 @@ eval:the-repository-hosts-data-and-metadata-according-to-a-set-of-defined-criter
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "6" ;
     schema:name "The repository hosts data and metadata according to a set of defined criteria to ensure that the resources provided are consistent with the intent of the repository." ;
 .
@@ -1018,7 +1018,7 @@ eval:the-repository-provides-documentation-for-each-resource-to-permit-its-compl
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "7" ;
     schema:name "The repository provides documentation for each resource to permit its complete and accurate citation." ;
 .
@@ -1028,7 +1028,7 @@ eval:a-description-of-the-methods-used-to-acquire-the-data-is-provided a fair:Cr
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "8" ;
     schema:name "A description of the methods used to acquire the data is provided." ;
 .
@@ -1038,7 +1038,7 @@ eval:version-information-is-provided-for-each-resource-where-available a fair:Cr
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Repository" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "9" ;
     schema:name "Version information is provided for each resource, where available." ;
 .
@@ -1047,7 +1047,7 @@ eval:a-standardized-id-or-accession-number-is-used-to-identify-the-dataset a fai
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "1" ;
     schema:name "A standardized ID or accession number is used to identify the dataset." ;
 .
@@ -1057,7 +1057,7 @@ eval:the-dataset-is-described-with-metadata-using-a-formal-broadly-applicable-vo
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "2" ;
     schema:name "The dataset is described with metadata using a formal, broadly applicable vocabulary." ;
 .
@@ -1067,7 +1067,7 @@ eval:information-is-provided-on-the-experimental-methods-used-to-generate-the-da
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "3" ;
     schema:name "Information is provided on the experimental methods used to generate the data." ;
 .
@@ -1075,7 +1075,7 @@ eval:the-dataset-is-hosted-in-an-established-data-repository-if-a-relevant-repos
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Qualitative Review" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "4" ;
     schema:name "The dataset is hosted in an established data repository, if a relevant repository exists." ;
 .
@@ -1084,7 +1084,7 @@ eval:the-dataset-can-be-downloaded-for-free-from-the-repository a fair:Criterion
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "5" ;
     schema:name "The dataset can be downloaded for free from the repository." ;
 .
@@ -1094,7 +1094,7 @@ eval:version-information-is-provided-for-the-dataset a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "6" ;
     schema:name "Version information is provided for the dataset." ;
 .
@@ -1104,7 +1104,7 @@ eval:contact-information-is-provided-for-the-creators-of-the-dataset a fair:Crit
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "7" ;
     schema:name "Contact information is provided for the creator(s) of the dataset." ;
 .
@@ -1113,7 +1113,7 @@ eval:information-is-provided-describing-how-to-cite-the-dataset a fair:Criterion
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "8" ;
     schema:name "Information is provided describing how to cite the dataset." ;
 .
@@ -1123,7 +1123,7 @@ eval:licensing-information-is-provided-on-the-datasets-landing-page a fair:Crite
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "Data Set" ;
-    schema:isPartOf eval:"fairshake" ;
+    schema:isPartOf eval:fairshake ;
     schema:identifier "9" ;
     schema:name "Licensing information is provided on the dataset's landing page." ;
 .
@@ -1217,7 +1217,7 @@ eval:registered a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "F1" ;
     schema:name "Registered" ;
 .
@@ -1227,7 +1227,7 @@ eval:discoverable-via-search-engines_applications a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "F1" ;
     schema:name "Discoverable via search engines/applications" ;
 .
@@ -1236,7 +1236,7 @@ eval:linked-from-external-resources a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "F1" ;
     schema:name "Linked from external resources" ;
 .
@@ -1246,7 +1246,7 @@ eval:metadata-documented a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "F2" ;
     schema:name "Metadata documented" ;
 .
@@ -1256,7 +1256,7 @@ eval:indexed a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "F2" ;
     schema:name "Indexed" ;
 .
@@ -1266,7 +1266,7 @@ eval:searchable-using-various-mechanisms a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "F2" ;
     schema:name "Searchable using various mechanisms" ;
 .
@@ -1276,7 +1276,7 @@ eval:contactable a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "F2" ;
     schema:name "Contactable" ;
 .
@@ -1285,7 +1285,7 @@ eval:dumps a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A1" ;
     schema:name "Dumps" ;
 .
@@ -1294,7 +1294,7 @@ eval:query a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A1" ;
     schema:name "Query" ;
 .
@@ -1303,7 +1303,7 @@ eval:downloads a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A1" ;
     schema:name "Downloads" ;
 .
@@ -1313,7 +1313,7 @@ eval:api a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A1" ;
     schema:name "API" ;
 .
@@ -1323,7 +1323,7 @@ eval:restful a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A2" ;
     schema:name "RESTful" ;
 .
@@ -1333,7 +1333,7 @@ eval:json a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A2" ;
     schema:name "JSON" ;
 .
@@ -1343,7 +1343,7 @@ eval:retrieval a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A2" ;
     schema:name "Retrieval" ;
 .
@@ -1353,7 +1353,7 @@ eval:paging a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A2" ;
     schema:name "Paging" ;
 .
@@ -1363,7 +1363,7 @@ eval:versioned a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A2" ;
     schema:name "Versioned" ;
 .
@@ -1372,7 +1372,7 @@ eval:uptime a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A2" ;
     schema:name "Uptime" ;
 .
@@ -1382,7 +1382,7 @@ eval:access a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A2" ;
     schema:name "Access" ;
 .
@@ -1390,7 +1390,7 @@ eval:audience a fair:Criterion ;
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A3" ;
     schema:name "Audience" ;
 .
@@ -1399,7 +1399,7 @@ eval:content a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A3" ;
     schema:name "Content" ;
 .
@@ -1408,7 +1408,7 @@ eval:browsable a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A3" ;
     schema:name "Browsable" ;
 .
@@ -1417,7 +1417,7 @@ eval:documented a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A3" ;
     schema:name "Documented" ;
 .
@@ -1426,7 +1426,7 @@ eval:tutorials a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "A3" ;
     schema:name "Tutorials" ;
 .
@@ -1436,7 +1436,7 @@ eval:credit a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Credit" ;
 .
@@ -1446,7 +1446,7 @@ eval:document-prefix-and-patterns a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Document prefix and patterns" ;
 .
@@ -1457,7 +1457,7 @@ eval:design a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Design" ;
 .
@@ -1467,7 +1467,7 @@ eval:avoid-embedding-meaning a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Avoid embedding meaning" ;
 .
@@ -1477,7 +1477,7 @@ eval:simple-durable-web-resolution a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Simple, durable web resolution" ;
 .
@@ -1487,7 +1487,7 @@ eval:version-management-policy a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Version-management policy" ;
 .
@@ -1497,7 +1497,7 @@ eval:uris-clear-and-findable a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "URIs clear and findable" ;
 .
@@ -1506,7 +1506,7 @@ eval:do-not-reassign-or-delete a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Do not reassign or delete" ;
 .
@@ -1515,7 +1515,7 @@ eval:document a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Document" ;
 .
@@ -1523,7 +1523,7 @@ eval:reference-and-display a fair:Criterion ;
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I1" ;
     schema:name "Reference and display" ;
 .
@@ -1534,7 +1534,7 @@ eval:semantics_data-structure a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I2" ;
     schema:name "Semantics/data structure" ;
 .
@@ -1544,7 +1544,7 @@ eval:exchange-standards a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I2" ;
     schema:name "Exchange standards" ;
 .
@@ -1555,7 +1555,7 @@ eval:ontologies a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I2" ;
     schema:name "Ontologies" ;
 .
@@ -1565,7 +1565,7 @@ eval:well-documented a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I3" ;
     schema:name "Well documented" ;
 .
@@ -1575,7 +1575,7 @@ eval:prior-versions a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "I3" ;
     schema:name "Prior versions" ;
 .
@@ -1584,7 +1584,7 @@ eval:size-of-the-user-community_value a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R1" ;
     schema:name "Size of the user community/value" ;
 .
@@ -1593,7 +1593,7 @@ eval:describe-how-metrics-are-tabulated a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R1" ;
     schema:name "Describe how metrics are tabulated" ;
 .
@@ -1602,7 +1602,7 @@ eval:stratified-by-key-user-groups a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R1" ;
     schema:name "Stratified by key user groups" ;
 .
@@ -1611,7 +1611,7 @@ eval:evidence-of-community-contribution-and_or-interaction a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R1" ;
     schema:name "Evidence of community contribution and/or interaction" ;
 .
@@ -1619,7 +1619,7 @@ eval:uniqueness a fair:Criterion ;
     fair:hasNoDirectMapping 1 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R2" ;
     schema:name "Uniqueness" ;
 .
@@ -1628,7 +1628,7 @@ eval:embeddedness a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R2" ;
     schema:name "Embeddedness" ;
 .
@@ -1637,7 +1637,7 @@ eval:publications-case-studies a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R2" ;
     schema:name "Publications, case studies" ;
 .
@@ -1646,7 +1646,7 @@ eval:testimonials a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R2" ;
     schema:name "Testimonials" ;
 .
@@ -1655,7 +1655,7 @@ eval:trackers a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R3" ;
     schema:name "Trackers" ;
 .
@@ -1664,7 +1664,7 @@ eval:advisers a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R3" ;
     schema:name "Advisers" ;
 .
@@ -1673,7 +1673,7 @@ eval:mailing-lists a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R3" ;
     schema:name "Mailing lists" ;
 .
@@ -1682,7 +1682,7 @@ eval:responsiveness a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R3" ;
     schema:name "Responsiveness" ;
 .
@@ -1691,7 +1691,7 @@ eval:release-notes a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R3" ;
     schema:name "Release notes" ;
 .
@@ -1701,7 +1701,7 @@ eval:currency a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R4" ;
     schema:name "Currency" ;
 .
@@ -1711,7 +1711,7 @@ eval:uptime a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R4" ;
     schema:name "Uptime" ;
 .
@@ -1721,7 +1721,7 @@ eval:comprehensiveness a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R4" ;
     schema:name "Comprehensiveness" ;
 .
@@ -1731,7 +1731,7 @@ eval:data-quality a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R4" ;
     schema:name "Data quality" ;
 .
@@ -1741,7 +1741,7 @@ eval:probability a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "R4" ;
     schema:name "Probability" ;
 .
@@ -1751,7 +1751,7 @@ eval:credit-and-link-derived-content a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "T1" ;
     schema:name "Credit and link derived content" ;
 .
@@ -1761,7 +1761,7 @@ eval:track-data-processing- a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "T1" ;
     schema:name "Track data processing " ;
 .
@@ -1771,7 +1771,7 @@ eval:make-provenance-information-available-for-complex-integrated-data a fair:Cr
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "T1" ;
     schema:name "Make provenance information available for complex integrated data" ;
 .
@@ -1781,7 +1781,7 @@ eval:attribute-organizations a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "T2" ;
     schema:name "Attribute organizations" ;
 .
@@ -1791,7 +1791,7 @@ eval:reference-with-identifiers-when-relevant a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "T2" ;
     schema:name "Reference with identifiers when relevant" ;
 .
@@ -1801,7 +1801,7 @@ eval:follow-community-standards a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "T2" ;
     schema:name "Follow community standards" ;
 .
@@ -1810,7 +1810,7 @@ eval:document-how-to-cite a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "T2" ;
     schema:name "Document how to cite" ;
 .
@@ -1820,7 +1820,7 @@ eval:documented a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L1" ;
     schema:name "Documented" ;
 .
@@ -1830,7 +1830,7 @@ eval:clear a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L1" ;
     schema:name "Clear" ;
 .
@@ -1840,7 +1840,7 @@ eval:minimally-restrictive a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L1" ;
     schema:name "Minimally restrictive" ;
 .
@@ -1850,7 +1850,7 @@ eval:standard-licenses a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L1" ;
     schema:name "Standard licenses" ;
 .
@@ -1860,7 +1860,7 @@ eval:contactable a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L1" ;
     schema:name "Contactable" ;
 .
@@ -1869,7 +1869,7 @@ eval:document-flowthrough a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L2" ;
     schema:name "Document flowthrough" ;
 .
@@ -1878,7 +1878,7 @@ eval:link-to-original-licenses_terms a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L2" ;
     schema:name "Link to original licenses/terms" ;
 .
@@ -1887,7 +1887,7 @@ eval:authorization-for-redistribution a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "L2" ;
     schema:name "Authorization for redistribution" ;
 .
@@ -1899,7 +1899,7 @@ eval:connectedness a fair:Criterion ;
     fair:hasNoDirectMapping 0 ;
     fair:measurementMethod "Present or Absent" ;
     fair:researchResourceType "All Resources" ;
-    schema:isPartOf eval:"fair-tlc" ;
+    schema:isPartOf eval:fair-tlc ;
     schema:identifier "C1" ;
     schema:name "Connectedness" ;
 .
