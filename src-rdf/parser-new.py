@@ -184,7 +184,7 @@ with open(filename) as tsvfile:
     if(line[16] != ""):
       print("    fair:researchResourceType \""+line[16]+"\" ;");
     if(line[16] != ""):
-      print("    schema:isPartOf eval:\""+rubric+"\" ;");
+      print("    schema:isPartOf eval:"+rubric+" ;");
     if(line[13] != ""):
       print("    schema:identifier \""+line[13]+"\" ;");
     if(line[12] != ""):
